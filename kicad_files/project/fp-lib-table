@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "strive_foot_prints")(type "KiCad")(uri "/home/marcel/Storage/GitHubProjects/FABulous_board/kicad_files/footprints/strive_foot_prints.pretty")(options "")(descr ""))
+)

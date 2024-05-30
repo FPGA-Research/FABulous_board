@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Caravel_board")(type "KiCad")(uri "/home/marcel/Storage/GitHubProjects/FABulous_board/kicad_files/symbols/Caravel_board.kicad_sym")(options "")(descr ""))
+  (lib (name "MicroMod-Sparkfun")(type "KiCad")(uri "/home/marcel/Storage/GitHubProjects/FABulous_board/kicad_files/symbols/MicroMod-Sparkfun.kicad_sym")(options "")(descr ""))
+)

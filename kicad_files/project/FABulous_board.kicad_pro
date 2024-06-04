@@ -393,6 +393,30 @@
     [
       "98d779a6-157c-40ed-a845-7459375f17fe",
       "Caravel Connections"
+    ],
+    [
+      "b4d9b251-031a-4875-8b01-0478a187070c",
+      "PC connection"
+    ],
+    [
+      "4c7542bb-a835-445d-b466-6e95b674eb44",
+      "Oscillator"
+    ],
+    [
+      "0ec6fa36-eb17-4575-aede-06fec96d10db",
+      "power"
+    ],
+    [
+      "61abf8ce-9ba2-4995-9a57-37e178bb3e97",
+      "voltage_supervisor"
+    ],
+    [
+      "4820c043-623b-447e-8e47-990cd78f4dc2",
+      "uart_buffers"
+    ],
+    [
+      "5f88f575-c9b5-4fb1-b6ba-05927512158b",
+      "pins"
     ]
   ],
   "text_variables": {}

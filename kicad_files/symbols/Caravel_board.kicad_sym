@@ -9216,7 +9216,7 @@
 		(symbol "SN74LVC1G125DCKR_0_0"
 			(polyline
 				(pts
-					(xy -5.08 -5.08) (xy 5.715 -5.08)
+					(xy -5.08 -5.08) (xy 5.08 -5.08)
 				)
 				(stroke
 					(width 0.4064)
@@ -9240,7 +9240,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.715 -5.08) (xy 5.715 5.08)
+					(xy 5.08 -5.08) (xy 5.08 5.08)
 				)
 				(stroke
 					(width 0.4064)
@@ -9252,7 +9252,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.715 5.08) (xy -5.08 5.08)
+					(xy 5.08 5.08) (xy -5.08 5.08)
 				)
 				(stroke
 					(width 0.4064)
@@ -9281,7 +9281,7 @@
 				)
 			)
 			(pin input line
-				(at -7.62 -3.175 0)
+				(at -7.62 -2.54 0)
 				(length 2.54)
 				(name "A"
 					(effects
@@ -9299,7 +9299,7 @@
 				)
 			)
 			(pin passive line
-				(at 1.27 -7.62 90)
+				(at 0 -7.62 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -9317,7 +9317,7 @@
 				)
 			)
 			(pin output line
-				(at 8.255 0 180)
+				(at 7.62 0 180)
 				(length 2.54)
 				(name "Y"
 					(effects
@@ -9337,7 +9337,7 @@
 		)
 		(symbol "SN74LVC1G125DCKR_1_0"
 			(pin power_in line
-				(at 1.27 7.62 270)
+				(at 0 7.62 270)
 				(length 2.54)
 				(name "VCC"
 					(effects
@@ -11457,37 +11457,37 @@
 				)
 			)
 			(pin power_in line
-				(at 8.89 -48.26 90)
-				(length 2.54)
+				(at 8.89 -49.53 90)
+				(length 3.81)
 				(name "GND"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "A1"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 			)
 			(pin power_in line
-				(at 6.35 -48.26 90)
-				(length 2.54)
+				(at 6.35 -49.53 90)
+				(length 3.81)
 				(name "GND"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)
 				(number "A2"
 					(effects
 						(font
-							(size 1.016 1.016)
+							(size 1.27 1.27)
 						)
 					)
 				)

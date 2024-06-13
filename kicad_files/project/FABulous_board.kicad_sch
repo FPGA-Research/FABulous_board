@@ -1034,6 +1034,34 @@
 		(color 0 0 0 0)
 		(uuid "9d3db826-0f64-4e25-9e83-ac101fbfe3ad")
 	)
+	(bus_entry
+		(at 220.98 88.9)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c4c2a40-9f64-4c43-8c2f-09d189485872")
+	)
+	(bus_entry
+		(at 220.98 91.44)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7175ca72-8031-4812-a33c-5f31f36a0785")
+	)
+	(bus
+		(pts
+			(xy 223.52 91.44) (xy 223.52 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "009c701f-6aa0-410b-bd21-29373d6de8ca")
+	)
 	(wire
 		(pts
 			(xy 168.91 105.41) (xy 168.91 111.76)
@@ -1043,16 +1071,6 @@
 			(type default)
 		)
 		(uuid "00d81b5f-c193-4be9-a1ec-25bbe054b272")
-	)
-	(bus
-		(pts
-			(xy 158.75 96.52) (xy 182.88 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0288a9db-b0fb-4ae8-b299-64012198fe1a")
 	)
 	(wire
 		(pts
@@ -1104,6 +1122,16 @@
 		)
 		(uuid "0d91643c-46e2-4ff2-bc6a-86948a28b096")
 	)
+	(bus
+		(pts
+			(xy 223.52 95.25) (xy 224.79 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f44170c-af2e-410c-864d-f729dc7c1ffd")
+	)
 	(wire
 		(pts
 			(xy 158.75 105.41) (xy 168.91 105.41)
@@ -1116,7 +1144,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 96.52) (xy 223.52 96.52)
+			(xy 228.6 143.51) (xy 231.14 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1204,6 +1232,16 @@
 		)
 		(uuid "36d1b911-0eef-4e39-9417-801c77a684c5")
 	)
+	(bus
+		(pts
+			(xy 123.19 113.03) (xy 127 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e3b43e5-1d1f-4810-8123-b45f856189e4")
+	)
 	(wire
 		(pts
 			(xy 81.28 86.36) (xy 81.28 78.74)
@@ -1213,6 +1251,16 @@
 			(type default)
 		)
 		(uuid "40fc5584-2347-4eb0-85e5-3b9f468b11c9")
+	)
+	(bus
+		(pts
+			(xy 203.2 93.98) (xy 207.01 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "453a9a76-d412-4b67-83e4-0994e7e0071a")
 	)
 	(wire
 		(pts
@@ -1264,6 +1312,16 @@
 		)
 		(uuid "5a655d8a-243d-471a-940e-ab5b35dc4180")
 	)
+	(bus
+		(pts
+			(xy 124.46 172.72) (xy 128.27 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d6c25e5-5bb9-45db-8f7f-599a937401b9")
+	)
 	(wire
 		(pts
 			(xy 158.75 86.36) (xy 168.91 86.36)
@@ -1306,7 +1364,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 100.33) (xy 223.52 100.33)
+			(xy 228.6 147.32) (xy 231.14 147.32)
 		)
 		(stroke
 			(width 0)
@@ -1356,6 +1414,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 88.9) (xy 220.98 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e279f16-833f-4cd7-b62e-50484dfea5c5")
+	)
+	(wire
+		(pts
 			(xy 261.62 43.18) (xy 261.62 44.45)
 		)
 		(stroke
@@ -1376,6 +1444,16 @@
 	)
 	(bus
 		(pts
+			(xy 223.52 93.98) (xy 223.52 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "842ed73d-accb-4673-a9ac-47357c5d23c4")
+	)
+	(bus
+		(pts
 			(xy 158.75 100.33) (xy 165.1 100.33)
 		)
 		(stroke
@@ -1386,7 +1464,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 100.33) (xy 251.46 100.33)
+			(xy 254 147.32) (xy 259.08 147.32)
 		)
 		(stroke
 			(width 0)
@@ -1426,7 +1504,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 104.14) (xy 251.46 104.14)
+			(xy 254 151.13) (xy 259.08 151.13)
 		)
 		(stroke
 			(width 0)
@@ -1446,7 +1524,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 104.14) (xy 223.52 104.14)
+			(xy 228.6 151.13) (xy 231.14 151.13)
 		)
 		(stroke
 			(width 0)
@@ -1486,7 +1564,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 96.52) (xy 252.73 96.52)
+			(xy 254 143.51) (xy 260.35 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1576,6 +1654,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 91.44) (xy 220.98 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea7aa0d9-a9fc-4d0c-aebb-1175e909089c")
+	)
+	(wire
+		(pts
 			(xy 88.9 118.11) (xy 88.9 119.38)
 		)
 		(stroke
@@ -1584,9 +1672,19 @@
 		)
 		(uuid "ea960675-3b97-47d5-af08-49be19c2df36")
 	)
+	(bus
+		(pts
+			(xy 158.75 96.52) (xy 182.88 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5b4f225-3ea9-476f-bba2-ba87c5ef449d")
+	)
 	(text "Flash memory"
 		(exclude_from_sim no)
-		(at 223.266 87.884 0)
+		(at 230.886 134.874 0)
 		(effects
 			(font
 				(size 2 2)
@@ -1594,6 +1692,17 @@
 			(justify left bottom)
 		)
 		(uuid "f9de4c4c-e3c1-4cfd-aa89-905127662438")
+	)
+	(label "FC.clock_select_1"
+		(at 204.47 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0011ba64-cea6-4bdb-a8bd-2585e1f7ab4a")
 	)
 	(label "~{UART_EN}"
 		(at 54.61 146.05 180)
@@ -1617,6 +1726,17 @@
 		)
 		(uuid "16911e33-269d-450b-b046-80217ebf7978")
 	)
+	(label "FC.clock_select_0"
+		(at 204.47 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "20329515-f53c-4969-b6be-f67f5ec8e601")
+	)
 	(label "FTDI_SPI{SPI}"
 		(at 123.19 110.49 180)
 		(fields_autoplaced yes)
@@ -1627,6 +1747,17 @@
 			(justify right bottom)
 		)
 		(uuid "41bc4a25-0e41-47f9-9895-7039b45ffc50")
+	)
+	(label "FC{FPGA_clocking}"
+		(at 123.19 113.03 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "467e8ef1-da7d-420c-b3d8-d4c0284ea18f")
 	)
 	(label "UART{UART}"
 		(at 91.44 142.24 0)
@@ -1640,7 +1771,7 @@
 		(uuid "49c526a1-dedc-4a0e-999f-49b59cddc79c")
 	)
 	(label "Caravel_SPI.DO"
-		(at 251.46 104.14 0)
+		(at 259.08 151.13 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1651,7 +1782,7 @@
 		(uuid "57b199b7-c949-4460-a2c9-78e79ebe7dde")
 	)
 	(label "Caravel_SPI.SCK"
-		(at 251.46 100.33 0)
+		(at 259.08 147.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1662,7 +1793,7 @@
 		(uuid "7e853159-cbe9-43f3-9aa1-9da47e3871ac")
 	)
 	(label "Caravel_SPI.DI"
-		(at 220.98 100.33 180)
+		(at 228.6 147.32 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1671,6 +1802,17 @@
 			(justify right bottom)
 		)
 		(uuid "804a7624-41d8-42bc-a021-64a6f2b7cf0a")
+	)
+	(label "I2C{SDA,SCL}"
+		(at 207.01 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c54fa67-f872-451f-a2cf-76cedf8b6599")
 	)
 	(label "FTDI_SPI.DI"
 		(at 91.44 138.43 0)
@@ -1682,6 +1824,17 @@
 			(justify left bottom)
 		)
 		(uuid "a8f416d6-d4b9-4641-b4c3-980c1ddd713c")
+	)
+	(label "I2C{SDA,SCL}"
+		(at 124.46 172.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "acc04134-9006-4b85-8eff-5d79e51a9467")
 	)
 	(label "FTDI_SPI.SCK"
 		(at 54.61 138.43 180)
@@ -1717,7 +1870,7 @@
 		(uuid "dc53db78-248f-4c46-b7e9-8be1b64f1109")
 	)
 	(label "Caravel_SPI.CS"
-		(at 220.98 96.52 180)
+		(at 228.6 143.51 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1737,6 +1890,17 @@
 			(justify left bottom)
 		)
 		(uuid "e279a3e2-d7c6-4387-bedd-c7517be3dd76")
+	)
+	(label "FC{clock_select_0, clock_select_1}"
+		(at 224.79 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e521bcf5-0679-4804-ab62-1f02bccdcc4b")
 	)
 	(symbol
 		(lib_id "Device:LED")
@@ -3083,7 +3247,7 @@
 		)
 	)
 	(sheet
-		(at 223.52 93.98)
+		(at 231.14 140.97)
 		(size 22.86 12.7)
 		(fields_autoplaced yes)
 		(stroke
@@ -3095,7 +3259,7 @@
 		)
 		(uuid "3740c85a-bf01-4ef6-a446-765972762ca5")
 		(property "Sheetname" "Flash"
-			(at 223.52 93.2684 0)
+			(at 231.14 140.2584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3104,7 +3268,7 @@
 			)
 		)
 		(property "Sheetfile" "Flash.kicad_sch"
-			(at 223.52 107.2646 0)
+			(at 231.14 154.2546 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3114,7 +3278,7 @@
 			)
 		)
 		(pin "MEM_SO" output
-			(at 223.52 100.33 180)
+			(at 231.14 147.32 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3124,7 +3288,7 @@
 			(uuid "c8f3f624-8c59-4c8f-a0a4-863ddd2326b5")
 		)
 		(pin "~{MEM_WP}" input
-			(at 223.52 104.14 180)
+			(at 231.14 151.13 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3134,7 +3298,7 @@
 			(uuid "01df626e-259a-47ef-837b-1bb32ed2e8af")
 		)
 		(pin "MEM_CS" input
-			(at 223.52 96.52 180)
+			(at 231.14 143.51 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3144,7 +3308,7 @@
 			(uuid "454f0b83-68de-42fc-82e9-b0b27ab780b6")
 		)
 		(pin "~{MEM_HOLD}" input
-			(at 246.38 96.52 0)
+			(at 254 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3154,7 +3318,7 @@
 			(uuid "04de4e15-4c03-492b-9607-dfa79a5d918f")
 		)
 		(pin "MEM_SCK" input
-			(at 246.38 100.33 0)
+			(at 254 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3164,7 +3328,7 @@
 			(uuid "cf0b4921-a0b9-4d9a-8cb4-3a70c80a9086")
 		)
 		(pin "MEM_SI" input
-			(at 246.38 104.14 0)
+			(at 254 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3260,8 +3424,8 @@
 		)
 	)
 	(sheet
-		(at 182.88 90.805)
-		(size 20.32 10.16)
+		(at 182.88 86.36)
+		(size 20.32 12.065)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3272,7 +3436,7 @@
 		)
 		(uuid "5f88f575-c9b5-4fb1-b6ba-05927512158b")
 		(property "Sheetname" "pins"
-			(at 182.88 90.0934 0)
+			(at 182.88 85.6484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3281,12 +3445,13 @@
 			)
 		)
 		(property "Sheetfile" "pins.kicad_sch"
-			(at 182.88 101.5496 0)
+			(at 182.88 99.0096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
 		(pin "mprj_io.[14..35]" bidirectional
@@ -3298,6 +3463,36 @@
 				(justify left)
 			)
 			(uuid "0e1044da-ad9d-493a-aa1c-d967e185e38f")
+		)
+		(pin "CLK_SEL_0" output
+			(at 203.2 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2a856a2d-7878-4f42-9b67-9efc5cf6e69a")
+		)
+		(pin "CLK_SEL_1" output
+			(at 203.2 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c80753df-da6f-4953-b024-29b303ea83bf")
+		)
+		(pin "I2C{SDA,SCL}" bidirectional
+			(at 203.2 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "39926e92-3d44-4a22-89a4-f271e4605477")
 		)
 		(instances
 			(project "FABulous_board"
@@ -3693,6 +3888,16 @@
 				)
 				(justify left top)
 			)
+		)
+		(pin "I2C{SDA,SCL}" bidirectional
+			(at 128.27 172.72 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8e9eb203-7525-44da-83bc-9642ea7202c8")
 		)
 		(instances
 			(project "FABulous_board"

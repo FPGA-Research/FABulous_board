@@ -4159,25 +4159,5 @@
 				)
 			)
 		)
-		(symbol "MICROMOD-Standoff_1_1"
-			(pin power_in line
-				(at 0 -6.35 90)
-				(length 5.08)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
 	)
 )

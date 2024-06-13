@@ -667,7 +667,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ffd162a-2b8b-4249-840b-857fffccf1e6")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR055"
 			(at 139.7 93.98 0)
 			(effects
 				(font
@@ -717,7 +717,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/61abf8ce-9ba2-4995-9a57-37e178bb3e97"
-					(reference "#PWR047")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -877,7 +877,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aec7f299-936a-4ab6-b4bc-e7461ce8388d")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR054"
 			(at 113.03 114.3 0)
 			(effects
 				(font
@@ -927,7 +927,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/61abf8ce-9ba2-4995-9a57-37e178bb3e97"
-					(reference "#PWR052")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -943,7 +943,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb979c5a-0121-43f1-9d68-b0b60e12f580")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR056"
 			(at 148.59 114.3 0)
 			(effects
 				(font
@@ -993,7 +993,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/61abf8ce-9ba2-4995-9a57-37e178bb3e97"
-					(reference "#PWR046")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)

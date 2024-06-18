@@ -763,22 +763,10 @@
 		(uuid "7b607bf5-56bf-42c8-ad5f-6be169178372")
 	)
 	(junction
-		(at 172.72 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "82199b21-c48b-43cf-9484-19474aff9421")
-	)
-	(junction
 		(at 116.84 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4ccb05b-1e53-4b12-9902-10b059a1ff40")
-	)
-	(junction
-		(at 132.08 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b2c55bf6-88a3-4784-aa75-1781133c7128")
 	)
 	(junction
 		(at 132.08 59.69)
@@ -925,16 +913,6 @@
 			(type default)
 		)
 		(uuid "57617d8a-619e-4a96-99a5-0f1e29edad18")
-	)
-	(wire
-		(pts
-			(xy 113.03 80.01) (xy 132.08 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ff518d1-873c-4d15-8be6-0fe71aba4511")
 	)
 	(wire
 		(pts
@@ -1178,16 +1156,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 77.47) (xy 196.85 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3651125-066c-428b-93c6-0ecde6850d7f")
-	)
-	(wire
-		(pts
 			(xy 168.91 60.96) (xy 172.72 60.96)
 		)
 		(stroke
@@ -1241,18 +1209,6 @@
 		)
 		(uuid "785551bd-dfeb-418e-9b2d-2da692e5c9e7")
 	)
-	(hierarchical_label "~{MEM_HOLD}"
-		(shape input)
-		(at 196.85 77.47 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bcc18ea5-3b3d-4223-99bb-bce20641505b")
-	)
 	(hierarchical_label "MEM_CS"
 		(shape input)
 		(at 113.03 74.93 180)
@@ -1264,18 +1220,6 @@
 			(justify right)
 		)
 		(uuid "ca0c5681-edbf-4b31-b2d0-e8cedd9a99ef")
-	)
-	(hierarchical_label "~{MEM_WP}"
-		(shape input)
-		(at 113.03 80.01 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d05ca680-6ca2-475d-83f0-f3cc951706c5")
 	)
 	(hierarchical_label "MEM_SI"
 		(shape input)

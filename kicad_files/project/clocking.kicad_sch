@@ -992,6 +992,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 78.74) (xy 127 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35d0bf86-36b1-4e43-ad21-534ca51540a2")
+	)
+	(wire
+		(pts
 			(xy 88.9 83.82) (xy 88.9 69.85)
 		)
 		(stroke
@@ -1102,6 +1112,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 81.28) (xy 124.46 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81a86073-b61a-4d10-8933-2069f027936b")
+	)
+	(wire
+		(pts
 			(xy 85.09 102.87) (xy 83.82 102.87)
 		)
 		(stroke
@@ -1183,6 +1203,30 @@
 			(justify right)
 		)
 		(uuid "6ea7456b-1733-4d2d-8a6c-7553a2987e59")
+	)
+	(hierarchical_label "CLK_efpga"
+		(shape output)
+		(at 127 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7eee6946-44cf-4903-ac9f-3d1a15e6d378")
+	)
+	(hierarchical_label "CLK_caravel"
+		(shape output)
+		(at 127 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cb9a3952-a713-4bd4-8522-2874b97045c7")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -1548,7 +1592,7 @@
 				)
 			)
 		)
-		(property "Footprint" "../../GitHubProjects/FABulous_board/kicad_files/external_libs/easy_eda:CRYSTAL-SMD_4P-L3.2-W2.5-BL"
+		(property "Footprint" "easy_eda:CRYSTAL-SMD_4P-L3.2-W2.5-BL"
 			(at 92.71 110.49 0)
 			(effects
 				(font
@@ -1699,7 +1743,7 @@
 				)
 			)
 		)
-		(property "Footprint" "../../GitHubProjects/FABulous_board/kicad_files/external_libs/easy_eda:MSOP-10_L3.0-W3.0-P0.50-LS5.0-BL"
+		(property "Footprint" "easy_eda:MSOP-10_L3.0-W3.0-P0.50-LS5.0-BL"
 			(at 114.3 93.98 0)
 			(effects
 				(font
@@ -1897,7 +1941,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "29cd02f8-f18d-4e4b-aab9-59fe9bee1eb1")
+			(uuid "29cd02f8-f18d-4e4b-aab9-59fe9bee1eb2")
 		)
 		(instances
 			(project ""

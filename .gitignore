@@ -27,3 +27,14 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+
+# Non KiCad files:
+
+*.log
+*.bin
+
+
+# Direnv files
+.direnv
+.envrc

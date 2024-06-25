@@ -12,9 +12,10 @@ height = 100
 
 
 def parse_arguments() -> argparse.Namespace:
-    """Parse the command line arguments
+    """Parse the command line arguments.
 
-    :return: The circuit name as specified on the command line.
+    :return: The arguments parsed from the command line.
+    :rtype: argparse.Namespace
     """
 
     parser = argparse.ArgumentParser(prog="plot.py")
@@ -56,22 +57,24 @@ def plot(
         print(f'Plot for circuit "{circuit_name}" generated!')
 
 
-def _get_relative_file_path(circuit_name: str, suffix: str):
+def _get_relative_file_path(circuit_name: str, suffix: str) -> str:
     """Get the relative path to the file
 
     :param circuit_name: The name of the circuit.
     :type circuit_name: str
     :param suffix: The suffix of the file.
     :type suffix: str
+    :return: The relative file path.
+    :rtype: str
     """
     file_path = "./" + circuit_name + "/" + circuit_name + suffix
     _check_if_file_exists(file_path)
     return file_path
 
 
-def _check_if_file_exists(file_path: str):
-    """Check if a file exists
-    Write an error message if it does not exist.
+def _check_if_file_exists(file_path: str) -> None:
+    """Check if a file exists.
+    Write an error message and exit if it does not exist.
     """
     file = Path(file_path)
     if not file.is_file():
@@ -83,7 +86,7 @@ def _check_if_file_exists(file_path: str):
         exit(1)
 
 
-def main():
+def main() -> None:
     args = parse_arguments()
     circuit_name = args.circuit_name
     data_file = _get_relative_file_path(args.circuit_name, ".txt")

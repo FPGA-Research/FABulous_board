@@ -5,6 +5,7 @@
 	(uuid "9aace0de-07d1-4dc1-81b3-7c06d6260bfb")
 	(paper "A4")
 	(title_block
+		(title "Flash Memory")
 		(date "2024-05-30")
 		(rev "0.1")
 	)
@@ -1174,7 +1175,7 @@
 		)
 		(uuid "f844b93a-f039-45a0-b148-5c06d25b9871")
 	)
-	(text "Flash memory"
+	(text "Flash Memory"
 		(exclude_from_sim no)
 		(at 141.478 44.958 0)
 		(effects

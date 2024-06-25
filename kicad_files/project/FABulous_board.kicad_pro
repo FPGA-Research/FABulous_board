@@ -619,7 +619,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "/home/marcel/Downloads/",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -644,7 +644,7 @@
     ],
     [
       "b4d9b251-031a-4875-8b01-0478a187070c",
-      "PC connection"
+      "PC Connection"
     ],
     [
       "4c7542bb-a835-445d-b466-6e95b674eb44",
@@ -652,23 +652,27 @@
     ],
     [
       "0ec6fa36-eb17-4575-aede-06fec96d10db",
-      "Power conversion"
+      "Power Conversion"
     ],
     [
       "61abf8ce-9ba2-4995-9a57-37e178bb3e97",
-      "voltage_supervisor"
+      "Voltage Supervisor"
     ],
     [
       "4820c043-623b-447e-8e47-990cd78f4dc2",
-      "uart_buffers"
+      "UART Buffers"
     ],
     [
       "5f88f575-c9b5-4fb1-b6ba-05927512158b",
-      "pins"
+      "Pin Headers"
     ],
     [
       "f10cc47a-6997-4ad5-9048-8515ebe6d2fe",
-      "clocking"
+      "Clocking"
+    ],
+    [
+      "238deadf-4ea7-42f0-993c-dcd1bd51f50c",
+      "Test Points"
     ]
   ],
   "text_variables": {}

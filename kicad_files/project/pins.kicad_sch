@@ -5,6 +5,7 @@
 	(uuid "48ed8061-5107-4ba7-baf8-0d4fdd08f136")
 	(paper "A4")
 	(title_block
+		(title "Pin Headers")
 		(date "2024-05-30")
 		(rev "0.1")
 	)

@@ -5,6 +5,7 @@
 	(uuid "63afed5a-fc12-4bd3-a549-f2d74a59899e")
 	(paper "A4")
 	(title_block
+		(title "Voltage Supervisor")
 		(date "2024-05-30")
 		(rev "0.1")
 	)

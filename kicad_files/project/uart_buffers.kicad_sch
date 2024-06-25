@@ -5,6 +5,7 @@
 	(uuid "413d46b1-e52f-43f2-8607-8d7d4b734975")
 	(paper "A4")
 	(title_block
+		(title "UART Buffers")
 		(date "2024-05-30")
 		(rev "0.1")
 	)

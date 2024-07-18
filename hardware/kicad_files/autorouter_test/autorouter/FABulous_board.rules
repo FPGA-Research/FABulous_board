@@ -1,0 +1,125 @@
+
+(rules PCB FABulous_board
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 33)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule GND
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule PWR
+      (active off)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 101.6)
+    (clearance 76.2)
+    (clearance 50.8 (type smd_to_turn_gap))
+    (clearance 19.2 (type smd))
+    (clearance 76.2 (type "kicad_default"))
+    (clearance 152.4 (type 6mil))
+  )
+  (padstack "Via[0-3]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle GND 800.0 0.0 0.0)
+    )
+    (shape
+      (circle PWR 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
+  )
+  (via 
+    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-3]_800:400_um-6mil" "Via[0-3]_800:400_um" 6mil
+  )
+  (via_rule
+    default "Via[0-3]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_800:400_um-kicad_default"
+  )
+  (via_rule
+    6mil "Via[0-3]_800:400_um-6mil"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 101.6)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND +3V3 "/Caravel Connections/vdda2" "/Caravel Connections/vccd2" +1V8 "/Caravel Connections/vdda1" "/PC connection/Oscillator/OSC1" "/PC connection/Oscillator/OSC2"
+    "Net-(D1-A)" "Net-(D2-A)" "/Caravel Connections/GPIO" "Net-(D6-A)" "/Caravel_SPI.CS" "/Caravel_SPI.DI" "/Caravel Connections/mprj_io.37" "Net-(J4-Pin_3)"
+    "/Caravel_SPI.SCK" "/Caravel_SPI.DO" "/~{UART_EN}" "/PC connection/~{MR}" "/FTDI_SPI.DO" "/FTDI_SPI.SCK" "/FTDI_SPI.DI" "Net-(U4-CC2)"
+    "Net-(U4-CC1)" "/FTDI_SPI.CS" "unconnected-(U4-SBU2-PadB8)" "unconnected-(U4-SBU1-PadA8)" "unconnected-(U5-ADBUS7-Pad20)" "unconnected-(U5-ADBUS4-Pad17)" "unconnected-(U5-ACBUS7-Pad31)" "unconnected-(U5-ACBUS5-Pad29)"
+    /UART.RX /UART.TX +5V "/Caravel Connections/mprj_io.30" "/Caravel Connections/mprj_io.14" "/Caravel Connections/mprj_io.31" "/Caravel Connections/mprj_io.28" "/Caravel Connections/mprj_io.26"
+    "/Caravel Connections/mprj_io.23" "/Caravel Connections/mprj_io.15" "/Caravel Connections/mprj_io.32" "/Caravel Connections/Bitbang.S_CLK" "/Caravel Connections/mprj_io.22" "/Caravel Connections/Bitbang.S_DATA" "/Caravel Connections/mprj_io.35" "/Caravel Connections/mprj_io.34"
+    "/Caravel Connections/mprj_io.29" "/Caravel Connections/mprj_io.18" "/Caravel Connections/mprj_io.24" "/Caravel Connections/mprj_io.16" "/Caravel Connections/mprj_io.19" "/Caravel Connections/~{RST}" "/Caravel Connections/mprj_io.25" "/Caravel Connections/mprj_io.33"
+    "/Caravel Connections/mprj_io.27" "/Caravel Connections/mprj_io.20" "/Caravel Connections/mprj_io.17" "/Caravel Connections/mprj_io.21" "unconnected-(U5-ACBUS8-Pad32)" "unconnected-(U2-NC-Pad39)" "unconnected-(U2-NC-Pad47)" "unconnected-(U2-NC-Pad4)"
+    "unconnected-(U2-NC-Pad10)" "unconnected-(U2-NC-Pad43)" "unconnected-(U2-NC-Pad8)" "unconnected-(U2-NC-Pad45)" "unconnected-(U2-NC-Pad6)" "/Caravel Connections/vcdd" "unconnected-(U2-NC-Pad41)" "unconnected-(U2-NC-Pad2)"
+    "unconnected-(U5-ACBUS9-Pad33)" "unconnected-(U5-EEDATA-Pad43)" "unconnected-(U5-ACBUS4-Pad28)" "unconnected-(U5-EECS-Pad45)" "unconnected-(U5-EECLK-Pad44)" "unconnected-(U5-ACBUS6-Pad30)" "unconnected-(U5-ADBUS5-Pad18)" "unconnected-(U5-ADBUS6-Pad19)"
+    "unconnected-(U8-RST-Pad3)" "/Power conversion/ADJ_1_45" "/Power conversion/ADJ" "/PC connection/~{RESET}" "/PC connection/RX_LED" "/PC connection/TX_LED" "/PC connection/VCCCORE" "/PC connection/VCCA"
+    "/PC connection/D-" "/PC connection/D+" "/PC connection/Shield" "/PC connection/REF" "Net-(D3-A)" "Net-(D7-A)" "/Caravel Connections/fpga_rx_led" "/Power conversion/ADJ_1_6"
+    "/Caravel Connections/fpga_uart_rx" "unconnected-(U2-mprj_io[0]-Pad49)" "Net-(J4-Pin_1)" "/FC.clock_select_0" /I2C.SCL /I2C.SDA "Net-(J6-Pin_3)" "/FC.clock_select_1"
+    "Net-(J6-Pin_1)" "/Caravel Connections/mprj_io_37_internal" "/Caravel Connections/mprj_io.36" "/Caravel Connections/mprj_io_36_internal" "Net-(U1-~{WP}(D2))" "Net-(U1-~{HOLD}(D3))" "/CLK_caravel" "/FC.external_clock"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 101.6)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class 6mil
+    (clearance_class 6mil)
+    (via_rule 6mil)
+    (rule
+      (width 152.4)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

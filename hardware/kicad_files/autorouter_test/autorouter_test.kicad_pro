@@ -106,17 +106,17 @@
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
-        "track_dangling": "error",
+        "track_dangling": "warning",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
         "unresolved_variable": "error",
-        "via_dangling": "error",
+        "via_dangling": "warning",
         "zones_intersect": "error"
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.1016,
+        "min_clearance": 0.0762,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.05,
         "min_hole_clearance": 0.254,
@@ -124,14 +124,14 @@
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
-        "min_silk_clearance": 0.0,
-        "min_text_height": 0.5,
+        "min_silk_clearance": 0.08,
+        "min_text_height": 0.8,
         "min_text_thickness": 0.0508,
         "min_through_hole_diameter": 0.2,
         "min_track_width": 0.1016,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.4064,
-        "solder_mask_to_copper_clearance": 0.005,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -461,14 +461,14 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "FABulous_board.kicad_pro",
+    "filename": "autorouter_test.kicad_pro",
     "version": 1
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.1016,
+        "clearance": 0.0762,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -619,7 +619,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "/home/marcel/Downloads/",
+    "plot_directory": "",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -644,7 +644,7 @@
     ],
     [
       "b4d9b251-031a-4875-8b01-0478a187070c",
-      "PC Connection"
+      "PC connection"
     ],
     [
       "4c7542bb-a835-445d-b466-6e95b674eb44",
@@ -652,27 +652,23 @@
     ],
     [
       "0ec6fa36-eb17-4575-aede-06fec96d10db",
-      "Power Conversion"
+      "Power conversion"
     ],
     [
       "61abf8ce-9ba2-4995-9a57-37e178bb3e97",
-      "Voltage Supervisor"
+      "voltage_supervisor"
     ],
     [
       "4820c043-623b-447e-8e47-990cd78f4dc2",
-      "UART Buffers"
+      "uart_buffers"
     ],
     [
       "5f88f575-c9b5-4fb1-b6ba-05927512158b",
-      "Pin Headers"
+      "pins"
     ],
     [
       "f10cc47a-6997-4ad5-9048-8515ebe6d2fe",
-      "Clocking"
-    ],
-    [
-      "238deadf-4ea7-42f0-993c-dcd1bd51f50c",
-      "Test Points"
+      "clocking"
     ]
   ],
   "text_variables": {}

@@ -5,7 +5,6 @@
 	(uuid "114e1d79-8e7a-4daa-b27d-c06dd33273f9")
 	(paper "A4")
 	(title_block
-		(title "PC connection")
 		(date "2024-05-30")
 		(rev "0.1")
 	)
@@ -2276,6 +2275,12 @@
 		(uuid "0d9f4586-52be-4d88-9f1b-c6d5ae21c719")
 	)
 	(junction
+		(at 91.44 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22ea5698-cdbf-42e6-9337-463ec555a130")
+	)
+	(junction
 		(at 201.93 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2340,6 +2345,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "790280ed-9872-4216-94bb-c6339a568076")
+	)
+	(junction
+		(at 105.41 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82ee105b-3149-4468-8ab2-9da8b12c53c5")
 	)
 	(junction
 		(at 201.93 148.59)
@@ -2616,6 +2627,16 @@
 			(type default)
 		)
 		(uuid "148f608a-e298-4a43-81ae-1a508092b233")
+	)
+	(wire
+		(pts
+			(xy 105.41 91.44) (xy 173.99 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15f8ccc1-1de9-4328-9a67-ed50df0a16f9")
 	)
 	(wire
 		(pts
@@ -2909,6 +2930,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 88.9) (xy 173.99 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46889be0-8d91-45d6-bb74-fd2607157ce8")
+	)
+	(wire
+		(pts
 			(xy 167.64 123.19) (xy 171.45 123.19)
 		)
 		(stroke
@@ -2966,16 +2997,6 @@
 			(type default)
 		)
 		(uuid "51b22ed1-c49a-4ff3-948b-948bce11a9f8")
-	)
-	(wire
-		(pts
-			(xy 170.18 91.44) (xy 173.99 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53e018bd-9a23-42b0-81eb-c337fd22426a")
 	)
 	(wire
 		(pts
@@ -3319,7 +3340,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 86.36) (xy 105.41 100.33)
+			(xy 105.41 86.36) (xy 105.41 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3376,16 +3397,6 @@
 			(type default)
 		)
 		(uuid "bb9960aa-305b-4f57-bb13-4a7cedf7bd78")
-	)
-	(wire
-		(pts
-			(xy 170.18 88.9) (xy 173.99 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfe75159-8d79-44e3-9a9e-c7745d83651e")
 	)
 	(wire
 		(pts
@@ -3689,6 +3700,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 91.44) (xy 105.41 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7944a0f-b112-4cff-a858-0116367e8045")
+	)
+	(wire
+		(pts
 			(xy 232.41 73.66) (xy 219.71 73.66)
 		)
 		(stroke
@@ -3727,18 +3748,7 @@
 		)
 		(uuid "fff36f5d-b4ac-4cb9-bf7a-5c62685449cf")
 	)
-	(text "USB Connector"
-		(exclude_from_sim no)
-		(at 46.482 64.262 0)
-		(effects
-			(font
-				(size 2 2)
-			)
-			(justify left bottom)
-		)
-		(uuid "43ff58e8-35ee-4410-9b52-55c986aba1b1")
-	)
-	(text "FTDI-Module\n"
+	(text "FTDI Module\n\n"
 		(exclude_from_sim no)
 		(at 199.644 47.244 0)
 		(effects
@@ -3815,17 +3825,6 @@
 		)
 		(uuid "5b505f2a-f379-4483-a127-0b3e3035c6cc")
 	)
-	(label "D+"
-		(at 170.18 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6b8b5943-b9c2-4512-b549-06e6a59a9f80")
-	)
 	(label "RX_LED"
 		(at 231.14 101.6 0)
 		(fields_autoplaced yes)
@@ -3858,17 +3857,6 @@
 			(justify right bottom)
 		)
 		(uuid "9e9bcb78-7ccc-462a-9c8a-fd8a6f0b5209")
-	)
-	(label "D-"
-		(at 170.18 88.9 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b9139ec1-dc2a-4735-96f3-6f501bd8fe4a")
 	)
 	(label "D+"
 		(at 86.36 86.36 0)
@@ -5775,7 +5763,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_QFP:LQFP-48-1EP_7x7mm_P0.5mm_EP3.6x3.6mm"
+		(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_8x8mm_P0.5mm_EP6.2x6.2mm"
 			(at 196.85 104.14 0)
 			(effects
 				(font

@@ -1013,7 +1013,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 105.41) (xy 168.91 111.76)
+			(xy 165.1 105.41) (xy 165.1 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1021,19 +1021,9 @@
 		)
 		(uuid "00d81b5f-c193-4be9-a1ec-25bbe054b272")
 	)
-	(wire
-		(pts
-			(xy 49.53 135.89) (xy 53.34 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "098cba2a-06cb-4a1d-913e-0359f8724c05")
-	)
 	(bus
 		(pts
-			(xy 129.54 143.51) (xy 133.35 143.51)
+			(xy 120.65 143.51) (xy 124.46 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1051,6 +1041,16 @@
 		)
 		(uuid "0d91643c-46e2-4ff2-bc6a-86948a28b096")
 	)
+	(wire
+		(pts
+			(xy 180.34 110.49) (xy 182.88 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f29281f-9d6e-47de-9c8e-6ed161faf1f5")
+	)
 	(bus
 		(pts
 			(xy 223.52 105.41) (xy 224.79 105.41)
@@ -1063,7 +1063,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 105.41) (xy 168.91 105.41)
+			(xy 158.75 105.41) (xy 165.1 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1093,7 +1093,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 138.43) (xy 151.13 138.43)
+			(xy 139.7 138.43) (xy 142.24 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1143,13 +1143,33 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 140.97) (xy 151.13 140.97)
+			(xy 203.2 107.95) (xy 205.74 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2245e12e-a805-4072-9bed-99567148f46e")
+	)
+	(wire
+		(pts
+			(xy 139.7 140.97) (xy 142.24 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "23604fdb-9476-45fb-a236-5df458510403")
+	)
+	(wire
+		(pts
+			(xy 44.45 139.7) (xy 46.99 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27468467-3085-477f-9c66-251cb2a52830")
 	)
 	(wire
 		(pts
@@ -1183,7 +1203,7 @@
 	)
 	(bus
 		(pts
-			(xy 203.2 88.9) (xy 205.74 88.9)
+			(xy 203.2 93.98) (xy 205.74 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1193,13 +1213,23 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 128.27) (xy 168.91 132.08)
+			(xy 165.1 128.27) (xy 165.1 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4b0770b1-5198-4811-a4cd-45a3454907a6")
+	)
+	(wire
+		(pts
+			(xy 180.34 113.03) (xy 182.88 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dc7b1aa-058f-440c-8ebb-f826f5d2f466")
 	)
 	(wire
 		(pts
@@ -1281,29 +1311,9 @@
 		)
 		(uuid "6b840385-b98c-4478-b797-dea05561279c")
 	)
-	(bus
-		(pts
-			(xy 82.55 139.7) (xy 86.36 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "703944df-6ed5-413c-913b-32ef54bf3664")
-	)
 	(wire
 		(pts
-			(xy 49.53 139.7) (xy 53.34 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "710db499-14d0-4e25-8ebe-70baa721346d")
-	)
-	(wire
-		(pts
-			(xy 168.91 119.38) (xy 168.91 120.65)
+			(xy 165.1 119.38) (xy 165.1 120.65)
 		)
 		(stroke
 			(width 0)
@@ -1403,6 +1413,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 142.24) (xy 46.99 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa8a9282-9c9a-4106-9ec5-1ca0f9566f95")
+	)
+	(wire
+		(pts
 			(xy 168.91 83.82) (xy 168.91 88.9)
 		)
 		(stroke
@@ -1453,7 +1473,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 135.89) (xy 86.36 135.89)
+			(xy 81.28 135.89) (xy 83.82 135.89)
 		)
 		(stroke
 			(width 0)
@@ -1493,13 +1513,23 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 86.36) (xy 205.74 86.36)
+			(xy 203.2 91.44) (xy 205.74 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e01488aa-fdd4-4adc-9741-65276b02ff94")
+	)
+	(wire
+		(pts
+			(xy 81.28 138.43) (xy 83.82 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0485d6d-d900-43a4-abf2-f609ba98336f")
 	)
 	(wire
 		(pts
@@ -1511,6 +1541,16 @@
 		)
 		(uuid "ea7aa0d9-a9fc-4d0c-aebb-1175e909089c")
 	)
+	(wire
+		(pts
+			(xy 44.45 135.89) (xy 46.99 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb469a49-767d-4d07-88e8-6358d160dc1e")
+	)
 	(bus
 		(pts
 			(xy 158.75 96.52) (xy 182.88 96.52)
@@ -1520,6 +1560,16 @@
 			(type default)
 		)
 		(uuid "f5b4f225-3ea9-476f-bba2-ba87c5ef449d")
+	)
+	(wire
+		(pts
+			(xy 203.2 105.41) (xy 205.74 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa15edc5-ecaf-4ff0-9793-0ab47dd5b3a0")
 	)
 	(label "FC.clock_select_1"
 		(at 204.47 101.6 0)
@@ -1532,8 +1582,19 @@
 		)
 		(uuid "0011ba64-cea6-4bdb-a8bd-2585e1f7ab4a")
 	)
+	(label "UART.RX"
+		(at 205.74 107.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0cb22323-d239-4edc-bf96-d349e56317b9")
+	)
 	(label "~{UART_EN}"
-		(at 49.53 139.7 180)
+		(at 44.45 139.7 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1576,8 +1637,19 @@
 		)
 		(uuid "22635435-4317-4fca-b496-76bdc7d9d979")
 	)
+	(label "UART.TX"
+		(at 180.34 113.03 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2635f4d2-f496-4500-9030-bd27deaf0670")
+	)
 	(label "FC.external_clock"
-		(at 151.13 140.97 0)
+		(at 142.24 140.97 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1609,8 +1681,8 @@
 		)
 		(uuid "467e8ef1-da7d-420c-b3d8-d4c0284ea18f")
 	)
-	(label "UART{UART}"
-		(at 86.36 139.7 0)
+	(label "FTDI_UART_TX"
+		(at 83.82 138.43 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1618,7 +1690,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "49c526a1-dedc-4a0e-999f-49b59cddc79c")
+		(uuid "4a9d0743-0bf9-4aa6-948d-bd64bbc28d66")
 	)
 	(label "Caravel_SPI.DO"
 		(at 154.94 168.91 0)
@@ -1632,7 +1704,7 @@
 		(uuid "57b199b7-c949-4460-a2c9-78e79ebe7dde")
 	)
 	(label "efpga_uart_rx"
-		(at 205.74 86.36 0)
+		(at 205.74 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1665,7 +1737,7 @@
 		(uuid "804a7624-41d8-42bc-a021-64a6f2b7cf0a")
 	)
 	(label "I2C{SDA,SCL}"
-		(at 205.74 88.9 0)
+		(at 205.74 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1676,7 +1748,7 @@
 		(uuid "8c54fa67-f872-451f-a2cf-76cedf8b6599")
 	)
 	(label "FTDI_SPI.DI"
-		(at 86.36 135.89 0)
+		(at 83.82 135.89 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1687,7 +1759,7 @@
 		(uuid "a8f416d6-d4b9-4641-b4c3-980c1ddd713c")
 	)
 	(label "CLK_caravel"
-		(at 151.13 138.43 0)
+		(at 142.24 138.43 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1697,8 +1769,19 @@
 		)
 		(uuid "ab999fee-ec46-4b58-bd74-fccac0469b90")
 	)
+	(label "FTDI_UART_RX"
+		(at 205.74 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "abb178f7-d16f-4331-893a-1a96303abf2f")
+	)
 	(label "I2C{SDA,SCL}"
-		(at 129.54 143.51 180)
+		(at 120.65 143.51 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1709,7 +1792,7 @@
 		(uuid "acc04134-9006-4b85-8eff-5d79e51a9467")
 	)
 	(label "FTDI_SPI.SCK"
-		(at 49.53 135.89 180)
+		(at 44.45 135.89 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1729,6 +1812,17 @@
 			(justify left bottom)
 		)
 		(uuid "c976ecaf-92f5-4254-91d9-22e992609642")
+	)
+	(label "FTDI_UART_RX"
+		(at 44.45 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d7910c30-ffa7-4528-9872-2a93836581da")
 	)
 	(label "Caravel_SPI{SPI}"
 		(at 165.1 92.71 0)
@@ -1774,6 +1868,17 @@
 		)
 		(uuid "e521bcf5-0679-4804-ab62-1f02bccdcc4b")
 	)
+	(label "FTDI_UART_TX"
+		(at 180.34 110.49 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "efc415e9-ac27-4118-b145-d1d23f9e370b")
+	)
 	(label "efpga_uart_rx"
 		(at 123.19 115.57 180)
 		(fields_autoplaced yes)
@@ -1787,15 +1892,15 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 168.91 124.46 90)
+		(at 165.1 124.46 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "03960c58-7499-4aab-bb49-ffc049ff2028")
-		(property "Reference" "D2"
-			(at 172.212 124.46 0)
+		(property "Reference" "D1"
+			(at 168.402 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1803,7 +1908,7 @@
 			)
 		)
 		(property "Value" "red"
-			(at 165.862 124.46 0)
+			(at 162.052 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1811,7 +1916,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
-			(at 168.91 124.46 0)
+			(at 165.1 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1820,7 +1925,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 168.91 124.46 0)
+			(at 165.1 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1829,7 +1934,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 168.91 124.46 0)
+			(at 165.1 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1846,7 +1951,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "D2")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -1927,7 +2032,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1a788fdf-79cd-49a3-bfa8-c3d5d2c1b88f")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR04"
 			(at 82.55 50.8 0)
 			(effects
 				(font
@@ -1977,7 +2082,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR03")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -2126,7 +2231,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3998cce4-9d54-447a-9714-73c00e60dd46")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR03"
 			(at 81.28 82.55 0)
 			(effects
 				(font
@@ -2176,7 +2281,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR04")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -2191,7 +2296,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a39789e-5aae-4672-8c06-262924af6841")
-		(property "Reference" "D1"
+		(property "Reference" "D2"
 			(at 172.212 80.01 0)
 			(effects
 				(font
@@ -2243,7 +2348,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "D1")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -2259,7 +2364,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80dc0a36-c3dc-4cc8-836f-29acdf3ef37a")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR09"
 			(at 261.62 63.5 0)
 			(effects
 				(font
@@ -2309,7 +2414,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR012")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -2317,7 +2422,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 168.91 132.08 0)
+		(at 165.1 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2325,8 +2430,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b21a4f1-218d-4ee6-894f-719ff1dc8acc")
-		(property "Reference" "#PWR010"
-			(at 168.91 138.43 0)
+		(property "Reference" "#PWR06"
+			(at 165.1 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2335,7 +2440,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 168.91 136.2131 0)
+			(at 165.1 136.2131 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2343,7 +2448,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.91 132.08 0)
+			(at 165.1 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2352,7 +2457,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 168.91 132.08 0)
+			(at 165.1 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2361,7 +2466,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 168.91 132.08 0)
+			(at 165.1 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2375,7 +2480,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR010")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -2390,7 +2495,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f910a2b-5d9f-4b87-9f90-f32b225c419b")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR07"
 			(at 168.91 68.58 0)
 			(effects
 				(font
@@ -2440,7 +2545,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR09")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -2456,7 +2561,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b36952c6-3a51-4c5b-a034-0733f543e391")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR05"
 			(at 88.9 125.73 0)
 			(effects
 				(font
@@ -2506,7 +2611,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR06")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -2514,23 +2619,23 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 168.91 115.57 0)
+		(at 165.1 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "c3f838da-b557-43d0-bc40-de50ef0a414d")
-		(property "Reference" "R2"
-			(at 171.45 115.57 90)
+		(property "Reference" "R1"
+			(at 167.64 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "82 "
-			(at 166.37 115.57 90)
+		(property "Value" "82"
+			(at 162.56 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2538,7 +2643,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 167.132 115.57 90)
+			(at 163.322 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2547,7 +2652,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 168.91 115.57 0)
+			(at 165.1 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2556,7 +2661,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 168.91 115.57 0)
+			(at 165.1 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2573,7 +2678,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "R2")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -2676,7 +2781,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1392ead-974d-4287-8ee3-51d0da30b356")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR08"
 			(at 261.62 34.29 0)
 			(effects
 				(font
@@ -2726,7 +2831,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR011")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -2808,7 +2913,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f779eccd-47ce-483a-bab4-0158e3d60dd4")
-		(property "Reference" "R1"
+		(property "Reference" "R2"
 			(at 171.45 71.12 90)
 			(effects
 				(font
@@ -2816,7 +2921,7 @@
 				)
 			)
 		)
-		(property "Value" "82 "
+		(property "Value" "82"
 			(at 166.37 71.12 90)
 			(effects
 				(font
@@ -2860,7 +2965,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "R1")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -3054,8 +3159,8 @@
 		)
 	)
 	(sheet
-		(at 53.34 133.35)
-		(size 29.21 8.89)
+		(at 46.99 133.35)
+		(size 34.29 10.795)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3066,7 +3171,7 @@
 		)
 		(uuid "4820c043-623b-447e-8e47-990cd78f4dc2")
 		(property "Sheetname" "UART Buffers"
-			(at 53.34 132.6384 0)
+			(at 46.99 132.6384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3075,7 +3180,7 @@
 			)
 		)
 		(property "Sheetfile" "uart_buffers.kicad_sch"
-			(at 53.34 142.8246 0)
+			(at 46.99 144.7296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3085,7 +3190,7 @@
 			)
 		)
 		(pin "~{UART_EN}" input
-			(at 53.34 139.7 180)
+			(at 46.99 139.7 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3095,7 +3200,7 @@
 			(uuid "cf42ce91-e4eb-4ede-8e6f-5b0d0086f668")
 		)
 		(pin "USB_SCK_TXD" input
-			(at 53.34 135.89 180)
+			(at 46.99 135.89 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3105,7 +3210,7 @@
 			(uuid "d3f0d20e-1697-4911-b085-7128db6be455")
 		)
 		(pin "USB_SO_RXD" output
-			(at 82.55 135.89 0)
+			(at 81.28 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3114,15 +3219,25 @@
 			)
 			(uuid "9c72b7ab-890f-4bda-bb0c-f499fc24d995")
 		)
-		(pin "UART{UART}" bidirectional
-			(at 82.55 139.7 0)
+		(pin "PC_UART_TX" output
+			(at 81.28 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "940056c2-c4b0-429e-94e5-1803d5a732ae")
+			(uuid "dd863da8-a4b3-46fc-9734-fd74670a91bc")
+		)
+		(pin "PC_UART_RX" input
+			(at 46.99 142.24 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "df231f9f-15c2-4ce4-8f4c-4522428cd193")
 		)
 		(instances
 			(project "FABulous_board"
@@ -3133,8 +3248,8 @@
 		)
 	)
 	(sheet
-		(at 182.88 84.455)
-		(size 20.32 26.035)
+		(at 182.88 89.535)
+		(size 20.32 24.765)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3145,7 +3260,7 @@
 		)
 		(uuid "5f88f575-c9b5-4fb1-b6ba-05927512158b")
 		(property "Sheetname" "Pin Headers"
-			(at 182.88 83.7434 0)
+			(at 182.88 88.8234 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3154,7 +3269,7 @@
 			)
 		)
 		(property "Sheetfile" "pins.kicad_sch"
-			(at 182.88 111.0746 0)
+			(at 182.88 114.8846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3194,7 +3309,7 @@
 			(uuid "c80753df-da6f-4953-b024-29b303ea83bf")
 		)
 		(pin "I2C{SDA,SCL}" bidirectional
-			(at 203.2 88.9 0)
+			(at 203.2 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3204,7 +3319,7 @@
 			(uuid "39926e92-3d44-4a22-89a4-f271e4605477")
 		)
 		(pin "efpga_uart_rx" output
-			(at 203.2 86.36 0)
+			(at 203.2 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3212,6 +3327,46 @@
 				(justify right)
 			)
 			(uuid "e8cf935c-1e13-4722-8e66-ffcb7367377a")
+		)
+		(pin "Caravel_UART_TX" input
+			(at 182.88 113.03 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0441d341-dc5a-4222-99f0-f9cca3b66293")
+		)
+		(pin "FTDI_UART_RX" output
+			(at 203.2 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c3cbaf66-a0c9-4234-86d6-69fd8a59d5a6")
+		)
+		(pin "FTDI_UART_TX" input
+			(at 182.88 110.49 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "93262f31-b647-4b50-abeb-4e610ba1bea6")
+		)
+		(pin "Caravel_UART_RX" output
+			(at 203.2 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "95d523ba-584d-43da-8488-008c5e99e204")
 		)
 		(instances
 			(project "FABulous_board"
@@ -3499,7 +3654,7 @@
 		)
 	)
 	(sheet
-		(at 133.35 134.62)
+		(at 124.46 134.62)
 		(size 15.24 10.795)
 		(fields_autoplaced yes)
 		(stroke
@@ -3511,7 +3666,7 @@
 		)
 		(uuid "f10cc47a-6997-4ad5-9048-8515ebe6d2fe")
 		(property "Sheetname" "Clocking"
-			(at 133.35 133.9084 0)
+			(at 124.46 133.9084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3520,7 +3675,7 @@
 			)
 		)
 		(property "Sheetfile" "clocking.kicad_sch"
-			(at 133.35 145.9996 0)
+			(at 124.46 145.9996 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3530,7 +3685,7 @@
 			)
 		)
 		(pin "I2C{SDA,SCL}" bidirectional
-			(at 133.35 143.51 180)
+			(at 124.46 143.51 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3540,7 +3695,7 @@
 			(uuid "8e9eb203-7525-44da-83bc-9642ea7202c8")
 		)
 		(pin "CLK_caravel" output
-			(at 148.59 138.43 0)
+			(at 139.7 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3550,7 +3705,7 @@
 			(uuid "c9514c45-fc04-402a-9e30-25abee17de7b")
 		)
 		(pin "CLK_efpga" output
-			(at 148.59 140.97 0)
+			(at 139.7 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)

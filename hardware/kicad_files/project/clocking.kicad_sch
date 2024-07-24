@@ -876,10 +876,6 @@
 		(uuid "f67ee7c1-2ce0-4342-9394-abe314761d57")
 	)
 	(no_connect
-		(at 167.64 100.33)
-		(uuid "c5161663-45a6-42cf-985d-21e70c4255db")
-	)
-	(no_connect
 		(at 167.64 102.87)
 		(uuid "e14f4cb2-6316-4c75-ad55-c1f084f19ac2")
 	)
@@ -900,6 +896,16 @@
 			(type default)
 		)
 		(uuid "a2a99e72-b22e-4e58-8aa8-193cec0c6bb5")
+	)
+	(wire
+		(pts
+			(xy 167.64 100.33) (xy 170.18 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10f31bd5-ef7c-4ec5-95dc-98d1621465f9")
 	)
 	(wire
 		(pts
@@ -1171,6 +1177,16 @@
 		)
 		(uuid "dc13afae-db42-4b10-8ad0-9a45946949bc")
 	)
+	(text "TODO: add CLK3 and jumper"
+		(exclude_from_sim no)
+		(at 144.526 54.356 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cbe8cdfd-bcf9-4fde-9051-680e3a1ad987")
+	)
 	(label "I2C.SCL"
 		(at 124.46 97.79 0)
 		(fields_autoplaced yes)
@@ -1193,6 +1209,18 @@
 		)
 		(uuid "95a98b82-e26c-4a83-bf75-9d2220e3aafb")
 	)
+	(hierarchical_label "CLK_efpga_1"
+		(shape output)
+		(at 170.18 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "666bbac4-5b12-4dd8-95a1-d304bc950ee1")
+	)
 	(hierarchical_label "I2C{SDA,SCL}"
 		(shape bidirectional)
 		(at 116.84 105.41 180)
@@ -1205,7 +1233,7 @@
 		)
 		(uuid "6ea7456b-1733-4d2d-8a6c-7553a2987e59")
 	)
-	(hierarchical_label "CLK_efpga"
+	(hierarchical_label "CLK_efpga_0"
 		(shape output)
 		(at 170.18 97.79 0)
 		(fields_autoplaced yes)
@@ -1371,7 +1399,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "404f364c-09a9-48a9-9af1-0aed1efbda7d")
-		(property "Reference" "R26"
+		(property "Reference" "R24"
 			(at 133.858 81.3378 0)
 			(effects
 				(font
@@ -1425,7 +1453,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
-					(reference "R26")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -1441,7 +1469,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49507949-de64-4003-9590-1dc7c7b570bc")
-		(property "Reference" "R27"
+		(property "Reference" "R25"
 			(at 141.478 81.3378 0)
 			(effects
 				(font
@@ -1495,7 +1523,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
-					(reference "R27")
+					(reference "R25")
 					(unit 1)
 				)
 			)

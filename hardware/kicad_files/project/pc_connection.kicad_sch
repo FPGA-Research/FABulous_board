@@ -5370,7 +5370,7 @@
 				)
 			)
 		)
-		(property "Value" "red"
+		(property "Value" "yellow green"
 			(at 250.571 92.202 0)
 			(effects
 				(font
@@ -5397,6 +5397,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 252.73 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Number" "C7496846"
 			(at 252.73 92.71 0)
 			(effects
 				(font
@@ -5502,7 +5511,7 @@
 				)
 			)
 		)
-		(property "Value" "red"
+		(property "Value" "yellow green"
 			(at 258.699 92.71 0)
 			(effects
 				(font
@@ -5529,6 +5538,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 261.62 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Number" "C7496846"
 			(at 261.62 92.71 0)
 			(effects
 				(font

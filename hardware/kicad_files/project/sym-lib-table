@@ -5,4 +5,5 @@
   (lib (name "easy_eda")(type "KiCad")(uri "/home/marcel/Storage/Data/kicad_libs/symbol/easy_eda.kicad_sym")(options "")(descr ""))
   (lib (name "samacsys")(type "KiCad")(uri "/home/marcel/Storage/GitHubProjects/FABulous_board/hardware/kicad_files/external_libs/samacsys.kicad_sym")(options "")(descr ""))
   (lib (name "FABulous")(type "KiCad")(uri "/home/marcel/Storage/GitHubProjects/FABulous_board/hardware/kicad_files/symbols/FABulous.kicad_sym")(options "")(descr ""))
+  (lib (name "FABulousLogo")(type "KiCad")(uri "/home/marcel/Storage/GitHubProjects/FABulous_board/hardware/kicad_files/symbols/fabulous_logo.kicad_sym")(options "")(descr ""))
 )

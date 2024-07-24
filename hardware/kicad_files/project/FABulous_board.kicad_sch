@@ -1021,16 +1021,6 @@
 		)
 		(uuid "00d81b5f-c193-4be9-a1ec-25bbe054b272")
 	)
-	(bus
-		(pts
-			(xy 120.65 143.51) (xy 124.46 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0aec063d-64d1-4db6-a70b-329e4f2e1cb7")
-	)
 	(wire
 		(pts
 			(xy 88.9 104.14) (xy 96.52 104.14)
@@ -1163,6 +1153,16 @@
 	)
 	(wire
 		(pts
+			(xy 142.24 143.51) (xy 139.7 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26fab059-b132-40c9-933e-fc6e644c2e5c")
+	)
+	(wire
+		(pts
 			(xy 44.45 139.7) (xy 46.99 139.7)
 		)
 		(stroke
@@ -1170,6 +1170,16 @@
 			(type default)
 		)
 		(uuid "27468467-3085-477f-9c66-251cb2a52830")
+	)
+	(wire
+		(pts
+			(xy 180.34 120.65) (xy 182.88 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e2437b6-3fce-4b3d-bcf9-6ead5926ab9d")
 	)
 	(wire
 		(pts
@@ -1263,6 +1273,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 118.11) (xy 182.88 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5adfbf62-f7ae-478d-ae7c-e1e32d28979f")
+	)
+	(wire
+		(pts
 			(xy 158.75 88.9) (xy 168.91 88.9)
 		)
 		(stroke
@@ -1330,6 +1350,16 @@
 			(type default)
 		)
 		(uuid "76d78bb0-6dd1-4e20-95ee-a8f08804aa04")
+	)
+	(wire
+		(pts
+			(xy 205.74 123.19) (xy 203.2 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a49435a-a714-483b-b8f1-16cd1a434f4f")
 	)
 	(wire
 		(pts
@@ -1453,6 +1483,16 @@
 	)
 	(bus
 		(pts
+			(xy 203.2 115.57) (xy 205.74 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c03fec6a-f307-4c9f-ab60-1dc9e7bf8c17")
+	)
+	(bus
+		(pts
 			(xy 76.2 88.9) (xy 81.28 88.9)
 		)
 		(stroke
@@ -1480,6 +1520,16 @@
 			(type default)
 		)
 		(uuid "d32c1f5c-5f7f-4cb1-b1bc-5f07ca01988f")
+	)
+	(bus
+		(pts
+			(xy 124.46 146.05) (xy 121.92 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6aa5a7a-fc6e-4ab8-b238-1b7e60219e41")
 	)
 	(wire
 		(pts
@@ -1582,6 +1632,17 @@
 		)
 		(uuid "0011ba64-cea6-4bdb-a8bd-2585e1f7ab4a")
 	)
+	(label "FTDI_SPI{SPI}"
+		(at 205.74 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "06b88ffd-00f4-4ffd-80b5-1e6fcc9e80c1")
+	)
 	(label "UART.RX"
 		(at 205.74 107.95 0)
 		(fields_autoplaced yes)
@@ -1603,6 +1664,17 @@
 			(justify right bottom)
 		)
 		(uuid "0dc1fdd9-5f9e-4dfc-9409-fd587f4a7baf")
+	)
+	(label "CLK_efpga_0"
+		(at 180.34 120.65 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0eaab760-74c2-45e5-bf49-39a78704d1a2")
 	)
 	(label "UART{UART}"
 		(at 165.1 100.33 0)
@@ -1648,16 +1720,16 @@
 		)
 		(uuid "2635f4d2-f496-4500-9030-bd27deaf0670")
 	)
-	(label "FC.external_clock"
-		(at 142.24 140.97 0)
+	(label "CLK_efpga_1"
+		(at 180.34 118.11 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "413d0ead-0ac6-4d02-bd72-19b01b2ccfca")
+		(uuid "2db8de7f-7fd0-413d-a50b-8b5a3f3688cb")
 	)
 	(label "FTDI_SPI{SPI}"
 		(at 123.19 110.49 180)
@@ -1691,6 +1763,17 @@
 			(justify left bottom)
 		)
 		(uuid "4a9d0743-0bf9-4aa6-948d-bd64bbc28d66")
+	)
+	(label "FC.external_clock"
+		(at 205.74 123.19 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4ec83b8a-92fd-454e-b9eb-2e22295f7c3f")
 	)
 	(label "Caravel_SPI.DO"
 		(at 154.94 168.91 0)
@@ -1781,7 +1864,7 @@
 		(uuid "abb178f7-d16f-4331-893a-1a96303abf2f")
 	)
 	(label "I2C{SDA,SCL}"
-		(at 120.65 143.51 180)
+		(at 121.92 146.05 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1812,6 +1895,17 @@
 			(justify left bottom)
 		)
 		(uuid "c976ecaf-92f5-4254-91d9-22e992609642")
+	)
+	(label "CLK_efpga_0"
+		(at 142.24 140.97 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3b2ee9c-6063-4b13-b845-cc4380ac8ac0")
 	)
 	(label "FTDI_UART_RX"
 		(at 44.45 142.24 180)
@@ -1868,6 +1962,17 @@
 		)
 		(uuid "e521bcf5-0679-4804-ab62-1f02bccdcc4b")
 	)
+	(label "CLK_efpga_1"
+		(at 142.24 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e68668bb-e46a-41eb-b52f-ef9396775220")
+	)
 	(label "FTDI_UART_TX"
 		(at 180.34 110.49 180)
 		(fields_autoplaced yes)
@@ -1907,7 +2012,7 @@
 				)
 			)
 		)
-		(property "Value" "red"
+		(property "Value" "blue"
 			(at 162.052 124.46 0)
 			(effects
 				(font
@@ -1933,7 +2038,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" ""
+			(at 165.1 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Number" "C434440"
 			(at 165.1 124.46 0)
 			(effects
 				(font
@@ -2171,7 +2285,7 @@
 				)
 			)
 		)
-		(property "Value" "red"
+		(property "Value" "yellow green"
 			(at 258.572 48.26 0)
 			(effects
 				(font
@@ -2198,6 +2312,15 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 261.62 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Number" "C7496846"
 			(at 261.62 48.26 0)
 			(effects
 				(font
@@ -2330,7 +2453,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" ""
+			(at 168.91 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Number" "XL-3216UGC-FB"
 			(at 168.91 80.01 0)
 			(effects
 				(font
@@ -3249,7 +3381,7 @@
 	)
 	(sheet
 		(at 182.88 89.535)
-		(size 20.32 24.765)
+		(size 20.32 36.83)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3269,7 +3401,7 @@
 			)
 		)
 		(property "Sheetfile" "pins.kicad_sch"
-			(at 182.88 114.8846 0)
+			(at 182.88 126.9496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3368,6 +3500,46 @@
 			)
 			(uuid "95d523ba-584d-43da-8488-008c5e99e204")
 		)
+		(pin "SPI{SCK CS DI DO}" bidirectional
+			(at 203.2 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e1671a40-9afd-4a6d-bac4-9c451dcbfd21")
+		)
+		(pin "CLK_efpga" output
+			(at 203.2 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2fa17f48-8bc7-42c2-b8d9-edc445201b99")
+		)
+		(pin "CLK_efpga_0" input
+			(at 182.88 120.65 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "afb077be-0ebf-4ae6-b9ff-1e91cec39378")
+		)
+		(pin "CLK_efpga_1" input
+			(at 182.88 118.11 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6747f604-e879-429c-bea1-5f5fd7b36552")
+		)
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
@@ -3431,6 +3603,45 @@
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
 					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 76.2 165.735)
+		(size 12.7 9.525)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "985f6576-3f77-418b-a30f-4421f3ee91f2")
+		(property "Sheetname" "Logos"
+			(at 76.2 165.0234 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "logos.kicad_sch"
+			(at 76.2 175.8446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "FABulous_board"
+				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
+					(page "12")
 				)
 			)
 		)
@@ -3655,7 +3866,7 @@
 	)
 	(sheet
 		(at 124.46 134.62)
-		(size 15.24 10.795)
+		(size 15.24 12.7)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3675,7 +3886,7 @@
 			)
 		)
 		(property "Sheetfile" "clocking.kicad_sch"
-			(at 124.46 145.9996 0)
+			(at 124.46 147.9046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3685,7 +3896,7 @@
 			)
 		)
 		(pin "I2C{SDA,SCL}" bidirectional
-			(at 124.46 143.51 180)
+			(at 124.46 146.05 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3704,7 +3915,7 @@
 			)
 			(uuid "c9514c45-fc04-402a-9e30-25abee17de7b")
 		)
-		(pin "CLK_efpga" output
+		(pin "CLK_efpga_0" output
 			(at 139.7 140.97 0)
 			(effects
 				(font
@@ -3713,6 +3924,16 @@
 				(justify right)
 			)
 			(uuid "2f5ab4e5-4177-49d0-9ede-91726691b48a")
+		)
+		(pin "CLK_efpga_1" output
+			(at 139.7 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "bcd37f13-b21c-4153-ba23-bc375909298c")
 		)
 		(instances
 			(project "FABulous_board"

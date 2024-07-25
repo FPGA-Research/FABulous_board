@@ -740,6 +740,12 @@
 		)
 	)
 	(junction
+		(at 132.08 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "061e6c5c-bbbc-4d4a-99e8-926a446db41b")
+	)
+	(junction
 		(at 168.91 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -780,6 +786,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b4374fc6-890f-4c5c-b970-31ae2cced560")
+	)
+	(junction
+		(at 172.72 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d06cbbcd-9dc3-4b12-9a35-80d593fac9bc")
 	)
 	(junction
 		(at 168.91 59.69)
@@ -864,6 +876,16 @@
 			(type default)
 		)
 		(uuid "380094ba-9d22-47ac-894f-64139f962ff6")
+	)
+	(wire
+		(pts
+			(xy 195.58 77.47) (xy 195.58 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a83afec-d305-4cb9-9c32-1bf5eb32977e")
 	)
 	(wire
 		(pts
@@ -977,6 +999,26 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 76.2) (xy 196.85 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e538afe-0960-4f73-b51a-c5bf0003dfea")
+	)
+	(wire
+		(pts
+			(xy 172.72 77.47) (xy 195.58 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "935074bf-24bb-4f6f-943e-918df15fa3da")
+	)
+	(wire
+		(pts
 			(xy 124.46 72.39) (xy 124.46 77.47)
 		)
 		(stroke
@@ -1064,6 +1106,16 @@
 			(type default)
 		)
 		(uuid "aefd1d74-4b2b-41ba-b482-159c36ae8ed7")
+	)
+	(wire
+		(pts
+			(xy 113.03 80.01) (xy 132.08 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4b41315-ad51-4415-8e0e-2248a8517cec")
 	)
 	(wire
 		(pts
@@ -1175,6 +1227,16 @@
 		)
 		(uuid "f844b93a-f039-45a0-b148-5c06d25b9871")
 	)
+	(bus
+		(pts
+			(xy 102.87 110.49) (xy 119.38 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdcd5047-4b39-4d54-8db2-c8484ec833df")
+	)
 	(text "Flash Memory"
 		(exclude_from_sim no)
 		(at 141.478 44.958 0)
@@ -1186,33 +1248,65 @@
 		)
 		(uuid "13af437c-2976-4343-abf8-d70c0546f4d4")
 	)
-	(hierarchical_label "MEM_SO"
-		(shape output)
-		(at 113.03 77.47 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2ec5aad6-1d9f-47ba-8da5-a6f6d6831707")
-	)
-	(hierarchical_label "MEM_SCK"
-		(shape input)
+	(label "Flash_SPI.SCK"
 		(at 196.85 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left bottom)
+		)
+		(uuid "25dd3622-28e8-45af-a55c-9ff0f786d4da")
+	)
+	(label "Flash_SPI.PICO"
+		(at 196.85 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "426a6191-ee02-4683-bcaa-9e6a1a2050c5")
+	)
+	(label "Flash_SPI.CS"
+		(at 113.03 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4e35e923-fb5d-4391-9198-0543fde0f13a")
+	)
+	(label "Flash_SPI.POCI"
+		(at 113.03 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f67f7f16-e6fe-4f78-bd7e-cae6d2559ab6")
+	)
+	(hierarchical_label "~{Flash_HOLD}"
+		(shape input)
+		(at 196.85 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
 			(justify left)
 		)
-		(uuid "785551bd-dfeb-418e-9b2d-2da692e5c9e7")
+		(uuid "92093b88-4632-4bbc-8a46-e85b75de1eb1")
 	)
-	(hierarchical_label "MEM_CS"
+	(hierarchical_label "~{Flash_WP}"
 		(shape input)
-		(at 113.03 74.93 180)
+		(at 113.03 80.01 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1220,19 +1314,19 @@
 			)
 			(justify right)
 		)
-		(uuid "ca0c5681-edbf-4b31-b2d0-e8cedd9a99ef")
+		(uuid "96128161-2b19-4cc3-ae9e-da0c41d42106")
 	)
-	(hierarchical_label "MEM_SI"
-		(shape input)
-		(at 196.85 82.55 0)
+	(hierarchical_label "Flash_SPI{SPI}"
+		(shape bidirectional)
+		(at 102.87 110.49 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "e835ed7e-c299-4778-941d-548176bd51e0")
+		(uuid "fe1ff35e-905f-4d9f-9835-fa6ed80495de")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -1318,7 +1412,7 @@
 				)
 			)
 		)
-		(property "Value" "W25Q32FVSS"
+		(property "Value" "W25Q32JVSSIQ"
 			(at 152.4 70.3326 0)
 			(effects
 				(font

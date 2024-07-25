@@ -3959,16 +3959,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 48.26) (xy 69.85 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ad8beef-85f3-4aa1-b009-37ab04e03b94")
-	)
-	(wire
-		(pts
 			(xy 236.22 38.1) (xy 236.22 39.37)
 		)
 		(stroke
@@ -4106,16 +4096,6 @@
 			(type default)
 		)
 		(uuid "19542f86-b99e-43d4-bd7c-d0b01742efda")
-	)
-	(wire
-		(pts
-			(xy 53.34 45.72) (xy 69.85 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ade334f-73c6-45d1-9b11-2defe8842904")
 	)
 	(wire
 		(pts
@@ -4929,6 +4909,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 48.26) (xy 69.85 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8056697f-dd2c-452e-b824-dbc1a358cd00")
+	)
+	(wire
+		(pts
 			(xy 262.89 91.44) (xy 262.89 93.98)
 		)
 		(stroke
@@ -5609,6 +5599,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 45.72) (xy 69.85 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c25eae7d-6b13-4a6c-b7e4-d42011f14f26")
+	)
+	(wire
+		(pts
 			(xy 228.6 128.27) (xy 228.6 127)
 		)
 		(stroke
@@ -6200,7 +6200,7 @@
 		)
 		(uuid "02051878-5869-472b-b498-0e0524aef887")
 	)
-	(label "Caravel_SPI.SCK"
+	(label "Flash_SPI.SCK"
 		(at 210.82 129.54 270)
 		(fields_autoplaced yes)
 		(effects
@@ -6299,7 +6299,7 @@
 		)
 		(uuid "134a2390-9dd2-4de6-a586-0f5a57579bc5")
 	)
-	(label "Caravel_SPI.DI"
+	(label "Flash_SPI.POCI"
 		(at 215.9 129.54 270)
 		(fields_autoplaced yes)
 		(effects
@@ -6343,7 +6343,7 @@
 		)
 		(uuid "21d65d94-8c4a-4936-b319-4cb5b0d0554b")
 	)
-	(label "Caravel_SPI.DO"
+	(label "Flash_SPI.PICO"
 		(at 68.58 115.57 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6431,7 +6431,7 @@
 		)
 		(uuid "2bdd7a71-505f-4549-8c85-d5151256a699")
 	)
-	(label "FTDI_SPI.DO"
+	(label "FTDI_SPI.PICO"
 		(at 236.22 128.27 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6453,7 +6453,7 @@
 		)
 		(uuid "2fdff35e-e723-467c-98bd-973490f0f674")
 	)
-	(label "FTDI_SPI.DI"
+	(label "FTDI_SPI.POCI"
 		(at 236.22 106.68 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6552,7 +6552,7 @@
 		)
 		(uuid "416b595d-f243-4dee-90eb-d2bf837e0bfe")
 	)
-	(label "Caravel_SPI.DO"
+	(label "Flash_SPI.PICO"
 		(at 213.36 129.54 270)
 		(fields_autoplaced yes)
 		(effects
@@ -6717,7 +6717,7 @@
 		)
 		(uuid "70ff6f0f-c8dd-4444-8842-d1d20bc77c9c")
 	)
-	(label "Caravel_SPI.CS"
+	(label "Flash_SPI.CS"
 		(at 208.28 129.54 270)
 		(fields_autoplaced yes)
 		(effects
@@ -6729,7 +6729,7 @@
 		(uuid "7223506e-0fe1-4990-bb93-3484922a16f4")
 	)
 	(label "fpga_uart_rx"
-		(at 53.34 45.72 0)
+		(at 53.34 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6827,7 +6827,7 @@
 		)
 		(uuid "80a01ae0-bb72-4a2b-9b65-90f2cf47e5df")
 	)
-	(label "Caravel_SPI.SCK"
+	(label "Flash_SPI.SCK"
 		(at 68.58 107.95 180)
 		(fields_autoplaced yes)
 		(effects
@@ -6861,7 +6861,7 @@
 		(uuid "86ec16eb-dbbc-4829-a46b-1abf022ebd24")
 	)
 	(label "fpga_rx_led"
-		(at 53.34 48.26 0)
+		(at 53.34 45.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6959,7 +6959,7 @@
 		)
 		(uuid "92c83180-6ef2-4c0f-9603-16c7af5756d9")
 	)
-	(label "Caravel_SPI.DI"
+	(label "Flash_SPI.POCI"
 		(at 68.58 113.03 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7091,7 +7091,7 @@
 		)
 		(uuid "b46d9ee7-8b0d-4f06-82d6-30eea6fcc036")
 	)
-	(label "FTDI_SPI.DI"
+	(label "FTDI_SPI.POCI"
 		(at 53.34 73.66 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7179,7 +7179,7 @@
 		)
 		(uuid "dcf6e785-5506-47db-aaa9-eaf3df0ac0bb")
 	)
-	(label "FTDI_SPI.DO"
+	(label "FTDI_SPI.PICO"
 		(at 53.34 76.2 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7256,7 +7256,7 @@
 		)
 		(uuid "ed98145a-9374-4d70-bb5b-7644b3ecd7bf")
 	)
-	(label "Caravel_SPI.CS"
+	(label "Flash_SPI.CS"
 		(at 68.58 123.19 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7367,7 +7367,7 @@
 		)
 		(uuid "041ef47e-e6b8-4f24-91c3-4fb7370b33d0")
 	)
-	(hierarchical_label "Caravel_SPI{SPI}"
+	(hierarchical_label "Flash_SPI{SPI}"
 		(shape bidirectional)
 		(at 58.42 153.67 180)
 		(fields_autoplaced yes)
@@ -7405,7 +7405,7 @@
 	)
 	(hierarchical_label "fpga_uart_rx"
 		(shape input)
-		(at 53.34 45.72 180)
+		(at 52.07 48.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7465,7 +7465,7 @@
 	)
 	(hierarchical_label "fpga_rx_led"
 		(shape output)
-		(at 53.34 48.26 180)
+		(at 52.07 45.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9269,12 +9269,13 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "C2977809"
 			(at 93.98 37.879 0)
 			(effects
 				(font
 					(size 1.143 1.143)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "MicroMod-Sparkfun:M.2-CONNECTOR-E"

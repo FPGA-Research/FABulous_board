@@ -255,7 +255,7 @@
 				)
 			)
 		)
-		(symbol "Connector:Conn_01x02_Socket"
+		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
@@ -269,7 +269,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x02_Socket"
+			(property "Value" "Conn_01x02_Pin"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -330,22 +330,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x02_Socket_1_1"
-				(arc
-					(start 0 -2.032)
-					(mid -0.5058 -2.54)
-					(end 0 -3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "Conn_01x02_Pin_1_1"
 				(polyline
 					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -357,7 +345,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 0) (xy -0.508 0)
+						(xy 1.27 0) (xy 0.8636 0)
 					)
 					(stroke
 						(width 0.1524)
@@ -367,20 +355,30 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 0 0.508)
-					(mid -0.5058 0)
-					(end 0 -0.508)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
 					(stroke
 						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at 5.08 0 180)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -398,7 +396,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at 5.08 -2.54 180)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -809,7 +807,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 110.49) (xy 190.5 101.6)
+			(xy 190.5 110.49) (xy 190.5 102.87)
 		)
 		(stroke
 			(width 0)
@@ -869,6 +867,26 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 102.87) (xy 190.5 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63dfc377-9c0a-45ec-b459-344b8081deef")
+	)
+	(wire
+		(pts
+			(xy 184.15 100.33) (xy 190.5 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "708a7200-b109-4b2f-bfb7-72ab99eb811c")
+	)
+	(wire
+		(pts
 			(xy 92.71 81.28) (xy 92.71 87.63)
 		)
 		(stroke
@@ -879,7 +897,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 93.98) (xy 190.5 99.06)
+			(xy 190.5 93.98) (xy 190.5 100.33)
 		)
 		(stroke
 			(width 0)
@@ -982,7 +1000,7 @@
 		)
 		(uuid "c72659d1-0deb-42a8-b681-4f59b8eaddcf")
 	)
-	(hierarchical_label "USB_SCK_TXD"
+	(hierarchical_label "FTDI_SPI_SCK"
 		(shape input)
 		(at 77.47 97.79 180)
 		(fields_autoplaced yes)
@@ -1006,7 +1024,7 @@
 		)
 		(uuid "f5b2785a-8b4d-48ca-b395-6358988bb780")
 	)
-	(hierarchical_label "USB_SO_RXD"
+	(hierarchical_label "FTDI_SPI_POCI"
 		(shape output)
 		(at 229.87 96.52 0)
 		(fields_autoplaced yes)
@@ -1144,73 +1162,6 @@
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/4820c043-623b-447e-8e47-990cd78f4dc2"
 					(reference "#PWR063")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Socket")
-		(at 185.42 101.6 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2b9cc52d-7722-4f1c-b146-1f64748df5b1")
-		(property "Reference" "J5"
-			(at 181.61 100.838 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02_Socket"
-			(at 183.896 104.394 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
-			(at 185.42 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 185.42 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 185.42 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "15385f93-ebf9-42b9-9558-67246d5012d8")
-		)
-		(pin "2"
-			(uuid "8fa7af1e-bd7b-4c2b-b881-ea3303f4c63c")
-		)
-		(instances
-			(project "FABulous_board"
-				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/4820c043-623b-447e-8e47-990cd78f4dc2"
-					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -1476,6 +1427,77 @@
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/4820c043-623b-447e-8e47-990cd78f4dc2"
 					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 179.07 102.87 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b69802e2-41c9-48f3-91fb-a8a4e6d43740")
+		(property "Reference" "J5"
+			(at 178.3589 100.3878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 178.3589 102.8121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 179.07 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 179.07 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7da62108-e5e8-4e1a-a35e-be77beb4eef2")
+		)
+		(pin "1"
+			(uuid "ef2b0c5b-78bd-438a-a3d4-aad30d710d5d")
+		)
+		(instances
+			(project ""
+				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/4820c043-623b-447e-8e47-990cd78f4dc2"
+					(reference "J5")
 					(unit 1)
 				)
 			)

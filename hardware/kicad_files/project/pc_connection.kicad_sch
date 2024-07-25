@@ -2629,6 +2629,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 73.66) (xy 232.41 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e5d4eb8-21e9-4609-9f47-fb6dc34b7a3c")
+	)
+	(wire
+		(pts
 			(xy 166.37 73.66) (xy 173.99 73.66)
 		)
 		(stroke
@@ -2779,16 +2789,6 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 81.28) (xy 219.71 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3700aebe-c7bc-4f64-ae0a-34940833b1f1")
-	)
-	(wire
-		(pts
 			(xy 242.57 52.07) (xy 242.57 54.61)
 		)
 		(stroke
@@ -2816,16 +2816,6 @@
 			(type default)
 		)
 		(uuid "39ae9953-5f9d-4ca5-ae53-25e11dcfa850")
-	)
-	(wire
-		(pts
-			(xy 232.41 76.2) (xy 219.71 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a9e1caa-b132-4cd5-afac-f028dc1a5113")
 	)
 	(wire
 		(pts
@@ -2986,6 +2976,16 @@
 			(type default)
 		)
 		(uuid "576f56b2-8954-48e3-a271-e8621ff5acdc")
+	)
+	(wire
+		(pts
+			(xy 219.71 76.2) (xy 232.41 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "584c543f-aa46-4065-b776-f3cdf87ca718")
 	)
 	(wire
 		(pts
@@ -3229,6 +3229,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 78.74) (xy 232.41 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87be0b81-55c0-4809-9302-eb00f9b1b54e")
+	)
+	(wire
+		(pts
 			(xy 261.62 73.66) (xy 261.62 78.74)
 		)
 		(stroke
@@ -3469,6 +3479,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 81.28) (xy 232.41 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d66646e2-58e7-404a-851b-cfa73d3a1d64")
+	)
+	(wire
+		(pts
 			(xy 196.85 148.59) (xy 199.39 148.59)
 		)
 		(stroke
@@ -3506,16 +3526,6 @@
 			(type default)
 		)
 		(uuid "dad435bb-6e79-4f71-b057-ad8e63e7dc64")
-	)
-	(wire
-		(pts
-			(xy 232.41 78.74) (xy 219.71 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e080855e-dd99-41ec-96ef-5dfc205a78ad")
 	)
 	(wire
 		(pts
@@ -3689,16 +3699,6 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 73.66) (xy 219.71 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fccad7c5-1ec2-47df-abbb-fd628f1dbb98")
-	)
-	(wire
-		(pts
 			(xy 64.77 72.39) (xy 64.77 83.82)
 		)
 		(stroke
@@ -3783,24 +3783,24 @@
 		(uuid "0d909162-0bbf-4bb6-8303-38c6300613bd")
 	)
 	(label "FTDI_SPI.SCK"
-		(at 232.41 73.66 180)
+		(at 219.71 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "15dcadd5-7432-4ec1-8052-b389ca48f048")
 	)
-	(label "FTDI_SPI.DI"
-		(at 232.41 76.2 180)
+	(label "FTDI_SPI.POCI"
+		(at 219.71 76.2 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "5a32dd4c-bf30-4976-b82b-dcd65fd6b765")
 	)
@@ -3849,13 +3849,13 @@
 		(uuid "889f5aa3-0841-43de-b882-d9269250e201")
 	)
 	(label "FTDI_SPI.CS"
-		(at 232.41 81.28 180)
+		(at 219.71 81.28 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "9e9bcb78-7ccc-462a-9c8a-fd8a6f0b5209")
 	)
@@ -3881,14 +3881,14 @@
 		)
 		(uuid "d3507ad4-5701-4883-a5cd-50cdfaa392de")
 	)
-	(label "FTDI_SPI.DO"
-		(at 232.41 78.74 180)
+	(label "FTDI_SPI.PICO"
+		(at 219.71 78.74 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "daa17ce4-f4a6-4cf5-8833-132b076f2429")
 	)
@@ -5370,12 +5370,13 @@
 				)
 			)
 		)
-		(property "Value" "yellow green"
+		(property "Value" "C965826"
 			(at 250.571 92.202 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
@@ -5396,16 +5397,15 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
-			(at 252.73 92.71 0)
+		(property "Description" "yellow green"
+			(at 249.936 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC Number" "C7496846"
+		(property "LCSC Number" " C965826"
 			(at 252.73 92.71 0)
 			(effects
 				(font
@@ -5511,12 +5511,13 @@
 				)
 			)
 		)
-		(property "Value" "yellow green"
+		(property "Value" "C965826"
 			(at 258.699 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
@@ -5537,16 +5538,15 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
-			(at 261.62 92.71 0)
+		(property "Description" "yellow green"
+			(at 258.826 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "LCSC Number" "C7496846"
+		(property "LCSC Number" " C965826"
 			(at 261.62 92.71 0)
 			(effects
 				(font

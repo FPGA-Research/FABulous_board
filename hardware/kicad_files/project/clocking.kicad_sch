@@ -1177,16 +1177,6 @@
 		)
 		(uuid "dc13afae-db42-4b10-8ad0-9a45946949bc")
 	)
-	(text "TODO: add CLK3 and jumper"
-		(exclude_from_sim no)
-		(at 144.526 54.356 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "cbe8cdfd-bcf9-4fde-9051-680e3a1ad987")
-	)
 	(label "I2C.SCL"
 		(at 124.46 97.79 0)
 		(fields_autoplaced yes)

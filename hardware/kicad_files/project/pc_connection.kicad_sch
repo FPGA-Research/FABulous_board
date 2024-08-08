@@ -5296,6 +5296,15 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Position Offset" "0,1.05"
+			(at 45.72 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "B6"
 			(uuid "4fcd08d8-1ae2-42b6-9525-993534b4b1ad")
 		)

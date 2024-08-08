@@ -120,20 +120,31 @@ def _print_device_names(device_names: List) -> None:
         print(f"       {device_name}")
 
 
-def main() -> None:
-    args = parse_arguments()
+def upload_bitstream(bitstream_file: str, baudrate: int) -> None:
+    """Upload the bitstream to the eFPGA.
 
+    :param bitstream_file: The bitstream file to be uploaded.
+    :type bitstream_file: str
+    :param baudrate: The baudrate to be used for the upload.
+    :type bitstream_file: str
+    """
     print("Checking device...")
 
     device_port = get_device_port()
 
-    data = read_bitstream_data(args.bitstream_file)
+    data = read_bitstream_data(bitstream_file)
     print("Uploading bitstream...")
 
-    with serial.Serial(device_port, args.baudrate) as ser:
+    with serial.Serial(device_port, baudrate) as ser:
         ser.write(data)
 
     print("Bitstream transmitted!")
+
+
+def main() -> None:
+    """The main function containing the application logic"""
+    args = parse_arguments()
+    upload_bitstream(args.bitstream_file, args.baudrate)
 
 
 if __name__ == "__main__":

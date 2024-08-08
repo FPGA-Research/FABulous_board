@@ -40,3 +40,6 @@ fp-info-cache
 # Direnv files
 .direnv
 .envrc
+
+# pycache
+__pycache__

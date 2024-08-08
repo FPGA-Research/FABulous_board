@@ -1,2 +1,6 @@
 external_libs
 production
+Logos.pretty
+*logo*
+!*fabulous_logo*
+*.bak

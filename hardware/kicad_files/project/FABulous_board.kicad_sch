@@ -2478,7 +2478,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
+		(property "Footprint" "easy_eda:LED1206-RD_RED_LTST-C230CKT"
 			(at 168.91 80.01 0)
 			(effects
 				(font

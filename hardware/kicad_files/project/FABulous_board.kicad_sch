@@ -2469,7 +2469,7 @@
 				)
 			)
 		)
-		(property "Value" "C3646938"
+		(property "Value" "C965822"
 			(at 165.862 80.01 0)
 			(effects
 				(font
@@ -2478,7 +2478,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "easy_eda:LED1206-RD_RED_LTST-C230CKT"
+		(property "Footprint" "easy_eda:LED1206-R-RD_RED"
 			(at 168.91 80.01 0)
 			(effects
 				(font
@@ -2496,15 +2496,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "red"
-			(at 166.116 79.756 0)
+		(property "Description" "Light emitting diode"
+			(at 168.91 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
-		(property "LCSC Number" "XL-3216UGC-FB"
+		(property "LCSC Number" " C3646937"
+			(at 168.91 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Rotation Offset" "180"
 			(at 168.91 80.01 0)
 			(effects
 				(font

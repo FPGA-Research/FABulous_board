@@ -79,6 +79,7 @@ def __config_i2c(address: int) -> I2cPort:
     return i2c.get_port(address)
 
 
+# TODO: implement clock calculation or remove
 def __check_clock(value, min=1, max=50) -> None:
     """Check a clock value for valid frequencies.
 
@@ -96,12 +97,15 @@ def __check_crystal(i2c_port: I2cPort):
 
     :param i2c_port: The I2c port to be used.
     """
+
+    print("Checking crystal...")
     status = i2c_port.read_from(REGISTER_DEVICE_STATUS, 1)
-    if int(status) & LOS_XTAL:
+    if int.from_bytes(status, byteorder="big") & LOS_XTAL:
         print(
             f"ERROR: Crystal loss of signal bit set. There seems to be a problem with the crystal or its configuration."
         )
         exit(1)
+    print("Crystal OK!")
 
 
 def __programming_procedure(i2c_port: I2cPort, registers: List[Register]):
@@ -111,39 +115,42 @@ def __programming_procedure(i2c_port: I2cPort, registers: List[Register]):
     :type i2c_port: I2cPort
     """
 
+    print("Start writing the configuration...")
     # Disable outputs
     i2c_port.write_to(REGISTER_OUTPUT_ENABLE, b"\xFF")
 
     # Power down all output drivers
-    i2c_port.write_to(REGISTER_CLK0_CONTROL, b"\x80", relax=False)
+    # i2c_port.write_to(REGISTER_CLK0_CONTROL, b"\x80", relax=False)
 
     # TODO: check if this works
-    i2c_port.write([0x80] * 7)  # Burst write up to register 23
+    i2c_port.write(
+        [REGISTER_CLK0_CONTROL] + [0x80] * 7
+    )  # Burst write up to register 23
 
     # Set interrupt masks
-    i2c_port.write_to(registers[0].address, bytes(registers[0].value))
+    i2c_port.write_to(registers[0].address, [registers[0].value])
 
     # Write config (start after register 3)
     for reg in registers[2:]:
-        i2c_port.write_to(reg.address, bytes(reg.value))
+        print(f"Writing {reg.value} to address {reg.address}...")
+        i2c_port.write_to(reg.address, [reg.value])
 
     # Apply PLLA and PLLB soft reset
     i2c_port.write_to(REGISTER_PLL_RESET, b"\xAC")
 
     # Enable outputs for CLK0, CLK1 and CLK2
-    i2c_port.write_to(registers[1].address, bytes(registers[1].value))
+    i2c_port.write_to(registers[1].address, [registers[1].value])
+    print("Configuration written!")
 
 
 def program_clock_ic(register_config_file: str):
-    """Program the clock IC with the given clock values and the register config file.
+    """Program the clock IC with the register config file.
 
     :param register_config_file: The config file containing the register values created by Clock Builder Pro.
     :type register_config_file: str
     """
 
     registers = read_register_config(register_config_file)
-    for register in registers:
-        print(f"Address: {register.address}, Value: {register.value}")
 
     i2c_port = __config_i2c(DEVICE_ADDRESS)
     __check_crystal(i2c_port)

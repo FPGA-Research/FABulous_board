@@ -26,9 +26,12 @@ def read_and_check_device_urls(ftdi: Ftdi) -> str:
         print("Error: No matching FTDI 232H device found!")
         sys.exit(1)
     elif len(urls) > 1:
-        print("Error: Too many FTDI 232H devices connected!")
+        print("Warning: Too many FTDI 232H devices connected!")
         __print_device_names(urls)
-        sys.exit(1)
+        # TODO improve
+        input_str = input("Type a number to select a device:")
+        input_int = int(input_str)
+        print("Using FTDI 232H device: " + urls[input_int])
     else:
         print("Found FTDI 232H device: " + urls[0])
     return urls[0]

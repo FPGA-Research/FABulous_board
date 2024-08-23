@@ -39,10 +39,11 @@ def setup_parser() -> argparse.Namespace:
         help="Specifies the bitstream file to be uploaded.",
     )
     upload_parser.add_argument(
+        "-b",
         "--baudrate",
+        help="Specifies the baudrate. Defaults to 57600 which is the eFPGAs baud rate at 10 MHz.",
         type=int,
-        required=True,
-        help="Specifies the baudrate.",
+        default=57600,
     )
 
     # Parse the arguments

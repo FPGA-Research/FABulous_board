@@ -30,7 +30,7 @@ def parse_arguments() -> argparse.Namespace:
     return args
 
 
-def get_device_port(device_name: str = "") -> str:
+def get_device_port(device_name: str) -> str:
     """Get the device port of a connected device.
 
     :param device_name: The name of the device to be used, default to ""
@@ -120,17 +120,22 @@ def _print_device_names(device_names: List) -> None:
         print(f"       {device_name}")
 
 
-def upload_bitstream(bitstream_file: str, baudrate: int) -> None:
+def upload_bitstream(bitstream_file: str, baudrate: int, device_port: str = "", device_name: str = "") -> None:
     """Upload the bitstream to the eFPGA.
 
     :param bitstream_file: The bitstream file to be uploaded.
     :type bitstream_file: str
     :param baudrate: The baudrate to be used for the upload.
-    :type bitstream_file: str
+    :type baudrate: int
+    :param device_port: The port for the serial interface.
+    :type device_port: str
+    :param device_name: (Optional) name to search for the serial interface.
+    :type device_prot: str
     """
     print("Checking device...")
 
-    device_port = get_device_port()
+    if device_port == "":
+        device_port = get_device_port(device_name)
 
     data = read_bitstream_data(bitstream_file)
     print("Uploading bitstream...")
@@ -144,7 +149,7 @@ def upload_bitstream(bitstream_file: str, baudrate: int) -> None:
 def main() -> None:
     """The main function containing the application logic"""
     args = parse_arguments()
-    upload_bitstream(args.bitstream_file, args.baudrate)
+    upload_bitstream(args.bitstream_file, args.baudrate, args.device_port, args.device_name)
 
 
 if __name__ == "__main__":

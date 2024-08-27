@@ -45,6 +45,19 @@ def setup_parser() -> argparse.Namespace:
         type=int,
         default=57600,
     )
+    upload_parser.add_argument(
+        "--device_port",
+        help="Specifies the port of the serial interface.",
+        type=str,
+        default=""
+    )
+    upload_parser.add_argument(
+        "-d",
+        "--device_name",
+        help="Specifies the name of the serial adapter for the automatic search.",
+        type=str,
+        default=""
+    )
 
     # Parse the arguments
     args = parser.parse_args()
@@ -65,8 +78,7 @@ def main():
         case "config_clocks":
             program_clock_ic(args.register_config)
         case "upload":
-            upload_bitstream(args.bitstream_file, args.baudrate)
-
+            upload_bitstream(args.bitstream_file, args.baudrate, args.device_port, args.device_name)
         case _:
             print("Test")
 

@@ -7201,7 +7201,7 @@
 		)
 		(uuid "de63e0bc-3d45-413b-bad8-3a675c8cbd14")
 	)
-	(label "Bitbang.S_DATA"
+	(label "Bitbang.S_CLK"
 		(at 160.02 133.35 90)
 		(fields_autoplaced yes)
 		(effects
@@ -7267,7 +7267,7 @@
 		)
 		(uuid "ef7e837e-0600-44e7-bc93-a5a2a089dc05")
 	)
-	(label "Bitbang.S_CLK"
+	(label "Bitbang.S_DATA"
 		(at 142.24 133.35 90)
 		(fields_autoplaced yes)
 		(effects

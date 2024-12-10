@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Test Points")
-		(date "2024-06-19")
+		(date "2024-05-30")
 		(rev "0.1")
 	)
 	(lib_symbols

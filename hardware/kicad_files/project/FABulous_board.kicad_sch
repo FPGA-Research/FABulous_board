@@ -3167,7 +3167,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "0ec6fa36-eb17-4575-aede-06fec96d10db")
-		(property "Sheetname" "Power Conversion"
+		(property "Sheetname" "Voltage Conversion"
 			(at 59.69 47.5484 0)
 			(effects
 				(font

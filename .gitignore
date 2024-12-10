@@ -30,6 +30,8 @@ fp-info-cache
 *.xml
 *.csv
 
+# Files used by kiri (https://github.com/leoheck/kiri)
+**/.kiri/
 
 # Non KiCad files:
 

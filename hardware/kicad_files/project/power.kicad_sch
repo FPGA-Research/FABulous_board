@@ -5,7 +5,7 @@
 	(uuid "f9395b1a-279e-4ddf-ac0d-80d44e477faa")
 	(paper "A4")
 	(title_block
-		(title "Power Conversion")
+		(title "Voltage Conversion")
 		(date "2024-05-30")
 		(rev "0.1")
 	)
@@ -762,27 +762,27 @@
 				)
 			)
 		)
-		(symbol "easy_eda:SPX1117M3-L-1-5_TR"
+		(symbol "easy_eda:SPX1117M3-L_TR"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -0.254 3.302 0)
+				(at -0.508 9.144 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "SPX1117M3-L-1-5_TR"
-				(at 1.016 7.874 0)
+			(property "Value" "SPX1117M3-L_TR"
+				(at -0.254 7.112 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "footprint:SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR"
+			(property "Footprint" "../../GitHubProjects/FABulous_board/hardware/kicad_files/external_libs/easy_eda:SOT-223-4_L6.5-W3.5-P2.30-LS7.0-BR"
 				(at 0 -10.16 0)
 				(effects
 					(font
@@ -792,8 +792,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://item.szlcsc.com/410724.html"
-				(at -15.748 9.144 0)
+			(property "Datasheet" "https://item.szlcsc.com/84517.html"
+				(at -2.286 0.127 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -803,6 +803,24 @@
 				)
 			)
 			(property "Description" ""
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C67402"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "C67402"
 				(at 0 0 0)
 				(effects
 					(font
@@ -811,25 +829,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC" "C517962"
-				(at 0 6.604 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "C517962"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SPX1117M3-L-1-5_TR_0_1"
+			(symbol "SPX1117M3-L_TR_0_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -1.27)
@@ -853,7 +853,7 @@
 					)
 				)
 			)
-			(symbol "SPX1117M3-L-1-5_TR_1_1"
+			(symbol "SPX1117M3-L_TR_1_1"
 				(pin input line
 					(at 0 -3.81 90)
 					(length 2.54)
@@ -901,6 +901,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54) hide
+					(name "VOUT"
+						(effects
+							(font
+								(size 1 1)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1 1)
@@ -2560,7 +2578,7 @@
 		)
 	)
 	(symbol
-		(lib_id "easy_eda:SPX1117M3-L-1-5_TR")
+		(lib_id "easy_eda:SPX1117M3-L_TR")
 		(at 208.28 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2569,24 +2587,22 @@
 		(dnp no)
 		(uuid "f2ad372b-ddd3-4422-a0e0-a349033d953e")
 		(property "Reference" "U7"
-			(at 203.454 96.266 0)
+			(at 208.026 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "SPX1117M3-L-1-5_TR"
-			(at 198.628 109.474 0)
+		(property "Value" "SPX1117M3-L_TR"
+			(at 208.28 94.996 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+		(property "Footprint" "easy_eda:SOT-223-4_L6.5-W3.5-P2.30-LS7.0-BR"
 			(at 208.28 113.03 0)
 			(effects
 				(font
@@ -2596,7 +2612,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/410724.html"
+		(property "Datasheet" "https://item.szlcsc.com/84517.html"
 			(at 205.994 102.743 0)
 			(effects
 				(font
@@ -2615,7 +2631,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C517962"
+		(property "LCSC" "C67402"
 			(at 208.28 102.87 0)
 			(effects
 				(font
@@ -2632,6 +2648,9 @@
 		)
 		(pin "2"
 			(uuid "d76cb302-b79a-40a6-af56-3dad1eaf0212")
+		)
+		(pin "4"
+			(uuid "5ffd2f3b-7f5d-4001-9765-aef7bccd4965")
 		)
 		(instances
 			(project "FABulous_board"

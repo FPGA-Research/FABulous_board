@@ -875,10 +875,6 @@
 		(color 0 0 0 0)
 		(uuid "f67ee7c1-2ce0-4342-9394-abe314761d57")
 	)
-	(no_connect
-		(at 167.64 102.87)
-		(uuid "e14f4cb2-6316-4c75-ad55-c1f084f19ac2")
-	)
 	(bus_entry
 		(at 123.19 97.79)
 		(size -2.54 2.54)
@@ -1049,6 +1045,16 @@
 	)
 	(wire
 		(pts
+			(xy 167.64 102.87) (xy 186.69 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "506c7f73-340a-4579-8253-c29ec8d2bf64")
+	)
+	(wire
+		(pts
 			(xy 132.08 76.2) (xy 132.08 78.74)
 		)
 		(stroke
@@ -1166,6 +1172,16 @@
 			(type default)
 		)
 		(uuid "d889aa49-159a-4c9c-8d70-1c6590a38258")
+	)
+	(wire
+		(pts
+			(xy 186.69 91.44) (xy 186.69 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d96afdcf-10ff-49c7-8d12-8e01a6520f46")
 	)
 	(wire
 		(pts
@@ -1308,6 +1324,72 @@
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
 					(reference "#PWR080")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 186.69 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1172fae2-ee59-4ee4-89c2-34b4225be713")
+		(property "Reference" "#PWR086"
+			(at 186.69 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 186.69 87.3069 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 186.69 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "08d015dc-775b-4964-9873-cda57d1a4a2e")
+		)
+		(instances
+			(project "FABulous_board"
+				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)

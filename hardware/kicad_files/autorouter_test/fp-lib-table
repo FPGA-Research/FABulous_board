@@ -1,9 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "strive_foot_prints")(type "KiCad")(uri "/home/marcel/Storage/GitHubProjects/FABulous_board/kicad_files/footprints/strive_foot_prints.pretty")(options "")(descr ""))
-  (lib (name "easy_eda")(type "KiCad")(uri "/home/marcel/Storage/GitHubProjects/FABulous_board/kicad_files/external_libs/easy_eda.pretty")(options "")(descr ""))
-  (lib (name "samacsys")(type "KiCad")(uri "/home/marcel/Storage/GitHubProjects/FABulous_board/kicad_files/external_libs/samacsys.pretty")(options "")(descr ""))
-  (lib (name "Caravel_Board")(type "KiCad")(uri "/home/marcel/Storage/GitHubProjects/FABulous_board/kicad_files/footprints/Caravel_Board.pretty")(options "")(descr ""))
-  (lib (name "MicroMod-Sparkfun")(type "KiCad")(uri "/home/marcel/Storage/GitHubProjects/FABulous_board/kicad_files/footprints/MicroMod-Sparkfun.pretty")(options "")(descr ""))
-  (lib (name "FABulous")(type "KiCad")(uri "/home/marcel/Storage/GitHubProjects/FABulous_board/kicad_files/footprints/FABulous.pretty")(options "")(descr ""))
-)

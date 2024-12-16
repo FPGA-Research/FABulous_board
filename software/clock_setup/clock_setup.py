@@ -2,26 +2,37 @@
 
 import argparse
 from argparse import Namespace
-from pyftdi.i2c import I2cController, I2cPort
-from pyftdi.ftdi import Ftdi
-import modules.ftdi_access as fa
+from pyftdi.i2c import I2cController, I2cPort, I2cNackError
 from clock_setup.read_register_config import read_register_config, Register
 from typing import List
+from loguru import logger
+from modules.ftdi_access import DEFAULT_FTDI_ID, get_device_url
 
-DEVICE_ADDRESS = 0x60
+DEVICE_I2C_ADDRESS = 0x60
 
 REGISTER_DEVICE_STATUS = 0
 REGISTER_OUTPUT_ENABLE = 3
 REGISTER_CLK0_CONTROL = 16
 REGISTER_PLL_RESET = 177
+REGISTER_CRYSTAL_INTERNAL_LOAD_CAPACITANCE = 183
 
 LOS_XTAL = 1 << 0x3
+XTAL_CL = 3 << 0x6
+
+
+class I2cConnectionError(Exception):
+    """An exception to be thrown when the I2C connection failed."""
+
+
+class CrystalError(Exception):
+    """An exception to be thrown when the crystal loss of signal bit is set."""
 
 
 def __setup_parser() -> Namespace:
     """Parse the command line arguments.
 
     :returns: The parsed arguments.
+    :rtype: Namespace
     """
     # Create the parser
     parser = argparse.ArgumentParser(
@@ -34,6 +45,14 @@ def __setup_parser() -> Namespace:
         type=str,
         help="Specifies the register config to be used.",
     )
+    parser.add_argument(
+        "-i",
+        "--device_id",
+        help=f"""Specify the ID of the FDTI board. Find it out using lsusb.
+        Defaults to {DEFAULT_FTDI_ID}""",
+        type=str,
+        default=DEFAULT_FTDI_ID,
+    )
 
     # Parse the arguments
     args = parser.parse_args()
@@ -41,88 +60,88 @@ def __setup_parser() -> Namespace:
     return args
 
 
-def __set_clocks(i2c_port: I2cPort) -> None:
-    """Set the clocks of the SI5351A-B
-
-    :param i2c_port: The I2C port to be used.
-    :type i2c_port: I2cPort
-    """
-    i2c_port = __config_i2c(DEVICE_ADDRESS)
-
-    # Send one byte, then receive one byte
-    # slave.exchange([0x04], 1)
-
-    # Write a register to the I2C slave
-    # slave.write_to(0x06, b"\x00")
-
-    # Read a register from the I2C slave
-    for address in range(0xFF):
-        try:
-            print(i2c_port.read_from(address, 1))
-        except:
-            print(f"Did not respond for register: {address}")
-
-
-def __config_i2c(address: int) -> I2cPort:
+def __config_i2c(i2c: I2cController, address: int, device_id: str) -> I2cPort | None:
     """Configure the I2C controller.
 
+    :param i2c: The I2C controller to be used.
+    :type i2c: I2cController
     :param address: The address of the device with which to communicate.
-    :return: The I2C port that can be used for communication.
+    :type address: int
+    :param device_id: The device ID of the device to be used for the I2C
+    communication.
+    :type device_id: str
+    :returns: The I2C port that can be used for communication.
+    :rtype: I2cPort | None
     """
-    i2c = I2cController()
 
-    ftdi = Ftdi()
-    device = fa.read_and_check_device_urls(ftdi)
-    i2c.configure(device)
+    i2c_port = None
+    connection_successful = False
+    while not connection_successful:
+        device_url = get_device_url(device_id)
+        if device_url is not None:
+            i2c.configure(device_url)
+        # Get a port to an I2C device
+        i2c_port = i2c.get_port(address)
+        try:
+            __check_connection(i2c_port)
+            connection_successful = True
+        except (I2cNackError, I2cConnectionError):
+            logger.error(
+                "I2C connection failed. Please check the connection or"
+                + " select another device!"
+            )
+            i2c.flush()
+            i2c.close()
 
-    # Get a port to an I2C slave device
-    return i2c.get_port(address)
+    return i2c_port
 
 
-# TODO: implement clock calculation or remove
-def __check_clock(value, min=1, max=50) -> None:
-    """Check a clock value for valid frequencies.
-
-    :param value: The value to be checked.
-    :param min: The minimum allowed clock value.
-    :param max: The maximum allowed clock value.
+def __check_connection(i2c_port: I2cPort) -> None:
     """
-    if value < min or value > max:
-        print(f"Please select a clock between 1 MHz and 50 MHz (inclusive).")
-        exit(1)
+    Check the connection by reading the load capacitance register.
 
 
-def __check_crystal(i2c_port: I2cPort):
+    :param i2c_port: The I2c port to be used.
+    :type i2c_port: I2cPort
+    """
+    value = i2c_port.read_from(REGISTER_CRYSTAL_INTERNAL_LOAD_CAPACITANCE, 1)
+
+    if (int.from_bytes(value, byteorder="big") & XTAL_CL) == 0:
+        raise I2cConnectionError
+
+
+def __check_crystal(i2c_port: I2cPort) -> None:
     """Check the status of the external crystal.
 
     :param i2c_port: The I2c port to be used.
+    :type i2c_port: I2cPort
     """
 
-    print("Checking crystal...")
+    logger.info("Checking crystal...")
     status = i2c_port.read_from(REGISTER_DEVICE_STATUS, 1)
+
     if int.from_bytes(status, byteorder="big") & LOS_XTAL:
-        print(
-            f"ERROR: Crystal loss of signal bit set. There seems to be a problem with the crystal or its configuration."
+        logger.error(
+            "Crystal loss of signal bit set. There seems to be a problem"
+            + "with the crystal or its configuration."
         )
-        exit(1)
-    print("Crystal OK!")
+        raise CrystalError
+    logger.info("Crystal OK!")
 
 
-def __programming_procedure(i2c_port: I2cPort, registers: List[Register]):
+def __programming_procedure(i2c_port: I2cPort, registers: List[Register]) -> None:
     """This implements the programming procedure described in figure 10 of the datasheet
 
     :param i2c_port: The I2C port to be used.
     :type i2c_port: I2cPort
     """
 
-    print("Start writing the configuration...")
+    logger.info("Start writing the configuration...")
     # Disable outputs
     i2c_port.write_to(REGISTER_OUTPUT_ENABLE, b"\xFF")
 
     # Power down all output drivers
-    # i2c_port.write_to(REGISTER_CLK0_CONTROL, b"\x80", relax=False)
 
-    # TODO: check if this works
     i2c_port.write(
         [REGISTER_CLK0_CONTROL] + [0x80] * 7
     )  # Burst write up to register 23
@@ -132,7 +151,6 @@ def __programming_procedure(i2c_port: I2cPort, registers: List[Register]):
 
     # Write config (start after register 3)
     for reg in registers[2:]:
-        print(f"Writing {reg.value} to address {reg.address}...")
         i2c_port.write_to(reg.address, [reg.value])
 
     # Apply PLLA and PLLB soft reset
@@ -140,28 +158,38 @@ def __programming_procedure(i2c_port: I2cPort, registers: List[Register]):
 
     # Enable outputs for CLK0, CLK1 and CLK2
     i2c_port.write_to(registers[1].address, [registers[1].value])
-    print("Configuration written!")
+    logger.info("Configuration written!")
 
 
-def program_clock_ic(register_config_file: str):
+def program_clock_ic(
+    register_config_file: str, i2c: I2cController, device_id: str
+) -> None:
     """Program the clock IC with the register config file.
 
     :param register_config_file: The config file containing the register values created by Clock Builder Pro.
     :type register_config_file: str
+    :param i2c: The I2cController instance to be used.
+    :type i2c: I2cController
+    :param device_id: The device ID of the device to be used for the I2C
+    communication.
+    :type device_id: str
     """
 
     registers = read_register_config(register_config_file)
 
-    i2c_port = __config_i2c(DEVICE_ADDRESS)
-    __check_crystal(i2c_port)
-    __programming_procedure(i2c_port, registers)
+    i2c = I2cController()
+    i2c_port = __config_i2c(i2c, DEVICE_I2C_ADDRESS, device_id)
+    if i2c_port is not None:
+        __check_crystal(i2c_port)
+        __programming_procedure(i2c_port, registers)
+    i2c.close()
 
 
-def main():
+def main() -> None:
     """The main function containing the application logic."""
     args = __setup_parser()
 
-    program_clock_ic(args.register_config)
+    program_clock_ic(args.register_config, I2cController(), "0403:6014")
 
 
 if __name__ == "__main__":

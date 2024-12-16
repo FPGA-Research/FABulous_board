@@ -27,7 +27,7 @@ def read_register_config(register_config: str) -> List[Register]:
     with open(register_config, newline="") as config:
         config_reader = csv.reader(config)
         for row in config_reader:
-            # exculde any header lines
+            # exclude any header lines
             if not row[0].startswith("#"):
                 address = int(row[0])
                 value = int(row[1][:-1], 16)  # strip the 'h' from the number

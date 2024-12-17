@@ -1,4 +1,13 @@
-pyftdi==0.55.4
+blessed==1.20.0
+editor==1.6.6
+inquirer==3.4.0
+loguru==0.7.3
+pyftdi==0.56.0
 pyserial==3.5
+pyudev==0.24.3
 pyusb==1.2.1
-termcolor==2.4.0
+readchar==4.2.1
+runs==1.2.2
+six==1.17.0
+wcwidth==0.2.13
+xmod==1.8.1

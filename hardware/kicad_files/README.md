@@ -1,11 +1,12 @@
-# Kicad Files
+# KiCad Files
+
+`project` : Contains the KiCad project itself including all schematics and the
+PCB layout.
 
 `footprints` : Contains footprint libraries needed for the
-project. Not all needed libraries are included due to
-licensing.
-
-`project` : Contains the KiCad project itself.
+project.
 
 `symbols` : Contains symbol libraries needed for the
-project. Not all needed libraries are included due to
-licensing.
+project.
+
+`3dmodels` : Placeholder for future or own 3D models.

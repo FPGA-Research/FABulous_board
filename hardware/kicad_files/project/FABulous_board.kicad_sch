@@ -300,47 +300,49 @@
 				)
 			)
 		)
-		(symbol "easy_eda:Tactile Switch"
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at -6.858 -0.254 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Tactile Switch"
-				(at -5.08 -0.508 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "footprint:SW-SMD_4P-L6.0-W6.0-P4.50-LS8.6"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://item.szlcsc.com/2796384.html"
-				(at -2.286 0.127 0)
+				(at 1.27 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
 				(effects
 					(font
@@ -349,7 +351,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC" "C5127964"
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
 				(at 0 0 0)
 				(effects
 					(font
@@ -358,30 +360,21 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "C5127964"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Tactile Switch_0_1"
+			(symbol "SW_Push_0_1"
 				(circle
-					(center 0 -0.762)
-					(radius 0.254)
+					(center -2.032 0)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(polyline
 					(pts
-						(xy -0.2182 0.5776) (xy -0.9199 -0.6865)
+						(xy 0 1.27) (xy 0 3.048)
 					)
 					(stroke
 						(width 0)
@@ -393,31 +386,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.54) (xy 0 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.524) (xy 0 0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 1.524)
+						(xy 2.54 1.27) (xy -2.54 1.27)
 					)
 					(stroke
 						(width 0)
@@ -428,86 +397,48 @@
 					)
 				)
 				(circle
-					(center 0 0.762)
-					(radius 0.254)
+					(center 2.032 0)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
-			)
-			(symbol "Tactile Switch_1_1"
 				(pin passive line
-					(at 0 5.08 270)
+					(at -5.08 0 0)
 					(length 2.54)
-					(name ""
+					(name "1"
 						(effects
 							(font
-								(size 1 1)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1 1)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at 0 -5.08 90)
+					(at 5.08 0 180)
 					(length 2.54)
-					(name ""
+					(name "2"
 						(effects
 							(font
-								(size 1 1)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "2"
 						(effects
 							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54) hide
-					(name ""
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54) hide
-					(name ""
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1 1)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -970,6 +901,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(bus_alias "Caravel_power"
 		(members "vdda" "vdda1" "vdda2" "vddio" "vcdd" "vccd" "vccd1" "vccd2")
@@ -982,6 +1009,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "023c3c17-653f-4420-86ab-340c5e54efb2")
+	)
+	(junction
+		(at 57.15 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d99ca434-cfee-4523-9f7a-37f10b1b9fb6")
 	)
 	(bus_entry
 		(at 220.98 99.06)
@@ -1033,6 +1066,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 53.34) (xy 57.15 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a1dcc86-f521-447c-bbd4-b5ab8df55e1c")
+	)
+	(wire
+		(pts
 			(xy 88.9 104.14) (xy 96.52 104.14)
 		)
 		(stroke
@@ -1070,16 +1113,6 @@
 			(type default)
 		)
 		(uuid "1080cbdf-c104-4802-bef4-02fe9ffb21e0")
-	)
-	(wire
-		(pts
-			(xy 88.9 116.84) (xy 88.9 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14378c4c-d70e-4144-baf1-d707d470f4d0")
 	)
 	(wire
 		(pts
@@ -1350,6 +1383,16 @@
 			(type default)
 		)
 		(uuid "7166112d-a810-468a-bd4c-14ab7cc09f52")
+	)
+	(wire
+		(pts
+			(xy 88.9 116.84) (xy 88.9 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73b5e534-0b7c-47e0-8118-f7732aa6e21e")
 	)
 	(wire
 		(pts
@@ -1640,6 +1683,16 @@
 			(type default)
 		)
 		(uuid "fa15edc5-ecaf-4ff0-9793-0ab47dd5b3a0")
+	)
+	(wire
+		(pts
+			(xy 50.8 49.53) (xy 50.8 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe3834ef-fd9a-48dd-a20b-4d2587e10795")
 	)
 	(label "FC.clock_select_1"
 		(at 204.47 101.6 0)
@@ -2478,7 +2531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "easy_eda:LED1206-R-RD_RED"
+		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
 			(at 168.91 80.01 0)
 			(effects
 				(font
@@ -2736,6 +2789,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 50.8 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7b874ac-20cd-4b53-8d47-f5b497979cf5")
+		(property "Reference" "#FLG01"
+			(at 50.8 47.625 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 50.8 45.3969 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 50.8 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06614950-c643-46c7-ba86-109b93f7d06f")
+		)
+		(instances
+			(project ""
+				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 88.9 119.38 0)
 		(unit 1)
@@ -2869,8 +2988,8 @@
 		)
 	)
 	(symbol
-		(lib_id "easy_eda:Tactile Switch")
-		(at 88.9 111.76 0)
+		(lib_id "Switch:SW_Push")
+		(at 88.9 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2879,44 +2998,42 @@
 		(fields_autoplaced yes)
 		(uuid "d3277d33-ddfe-4962-96cb-a6ba71cd08df")
 		(property "Reference" "SW1"
-			(at 89.7889 110.5478 0)
+			(at 90.043 110.5478 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "Tactile Switch"
-			(at 89.7889 112.9721 0)
+			(at 90.043 112.9721 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "easy_eda:SW_SMD_4P_L6.0_W6.0-P4.5-LS8.6"
-			(at 88.9 121.92 0)
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_Omron_B3FS-101xP"
+			(at 83.82 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/2796384.html"
-			(at 86.614 111.633 0)
+		(property "Datasheet" "~"
+			(at 83.82 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 88.9 111.76 0)
 			(effects
 				(font
@@ -2934,14 +3051,8 @@
 				(hide yes)
 			)
 		)
-		(pin "4"
-			(uuid "57693015-a021-49fa-a1c6-581126b81950")
-		)
 		(pin "2"
 			(uuid "47ee25e5-7ed3-4362-8ddc-81b358aaa61d")
-		)
-		(pin "3"
-			(uuid "321219a7-7b74-4749-a963-32f88b70c9df")
 		)
 		(pin "1"
 			(uuid "24667f4b-f748-477b-b959-d625d797d1f7")

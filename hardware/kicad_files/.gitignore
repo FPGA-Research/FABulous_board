@@ -1,6 +1,7 @@
-external_libs
+external_libs/*
 production
 Logos.pretty
 *logo*
 !*fabulous_logo*
+!external_libs/README.md
 *.bak

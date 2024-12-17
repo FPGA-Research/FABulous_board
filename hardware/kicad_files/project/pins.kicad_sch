@@ -4715,7 +4715,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4ca8cf78-b578-4911-acac-26a565e43465")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR080"
 			(at 226.06 144.78 0)
 			(effects
 				(font
@@ -4765,7 +4765,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/5f88f575-c9b5-4fb1-b6ba-05927512158b"
-					(reference "#PWR073")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -4781,7 +4781,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "508f4a78-a23f-486c-bf13-c026aedd140e")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR077"
 			(at 180.34 142.24 0)
 			(effects
 				(font
@@ -4831,7 +4831,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/5f88f575-c9b5-4fb1-b6ba-05927512158b"
-					(reference "#PWR070")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -4847,7 +4847,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "821ac475-5a94-4067-800c-1b6006afb701")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR075"
 			(at 55.88 153.67 0)
 			(effects
 				(font
@@ -4897,7 +4897,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/5f88f575-c9b5-4fb1-b6ba-05927512158b"
-					(reference "#PWR068")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -4981,7 +4981,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "860db5ae-e9ed-4352-8d6e-09be5e3a6d47")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR079"
 			(at 200.66 81.28 0)
 			(effects
 				(font
@@ -5031,7 +5031,7 @@
 		(instances
 			(project ""
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/5f88f575-c9b5-4fb1-b6ba-05927512158b"
-					(reference "#PWR072")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -5047,7 +5047,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8a7b0a79-7674-4013-9ceb-a85e1dcad30f")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR074"
 			(at 39.37 153.67 0)
 			(effects
 				(font
@@ -5097,7 +5097,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/5f88f575-c9b5-4fb1-b6ba-05927512158b"
-					(reference "#PWR067")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -5113,7 +5113,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9073a1ea-649b-49c2-adeb-be91ced26e82")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR076"
 			(at 144.78 135.89 0)
 			(effects
 				(font
@@ -5163,7 +5163,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/5f88f575-c9b5-4fb1-b6ba-05927512158b"
-					(reference "#PWR069")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -5179,7 +5179,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9eb2fbfa-d84e-4fdd-ba3b-7c03a375ca57")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR081"
 			(at 238.76 81.28 0)
 			(effects
 				(font
@@ -5229,7 +5229,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/5f88f575-c9b5-4fb1-b6ba-05927512158b"
-					(reference "#PWR074")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -5245,7 +5245,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2f3ed78-38a0-4d65-b77a-55bb15e6a074")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR078"
 			(at 200.66 68.58 0)
 			(effects
 				(font
@@ -5295,7 +5295,7 @@
 		(instances
 			(project ""
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/5f88f575-c9b5-4fb1-b6ba-05927512158b"
-					(reference "#PWR071")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -5623,7 +5623,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f36076d2-6b05-4e00-a223-3ce468d66273")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR082"
 			(at 240.03 68.58 0)
 			(effects
 				(font
@@ -5673,7 +5673,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/5f88f575-c9b5-4fb1-b6ba-05927512158b"
-					(reference "#PWR075")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)

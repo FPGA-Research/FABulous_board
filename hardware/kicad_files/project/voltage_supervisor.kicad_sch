@@ -10,177 +10,6 @@
 		(rev "0.1")
 	)
 	(lib_symbols
-		(symbol "Caravel_board:MCP1319MT-29LE-OT"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -5.08 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MCP1319MT-29LE-OT"
-				(at 8.89 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Caravel_Board:PoR_5_SOT23"
-				(at 20.32 -8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP131X-2X-Voltage-Supervisor-DS20001985E.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Microcontroller supervisory circuit, SOIC-8"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "supervisory circuit"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MCP1319MT-29LE-OT_0_1"
-				(rectangle
-					(start 5.08 7.62)
-					(end -5.08 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "MCP1319MT-29LE-OT_1_1"
-				(pin output line
-					(at -7.62 3.81 0)
-					(length 2.54)
-					(name "~{RST}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -7.62 -5.08 0)
-					(length 2.54)
-					(name "RST"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 7.62 -5.08 180)
-					(length 2.54)
-					(name "~{MR}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 7.62 3.81 180)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -308,6 +137,159 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "custom_symbols:MCP1319MT-29LE-OT"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "K"
+				(at 2.794 4.826 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MCP1319MT-29LE-OT_0_1"
+				(rectangle
+					(start -5.08 3.81)
+					(end 5.08 -6.35)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MCP1319MT-29LE-OT_1_1"
+				(pin input line
+					(at -7.62 -1.27 0)
+					(length 2.54)
+					(name "~{MR}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 6.35 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 1.27 180)
+					(length 2.54)
+					(name "RST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 -3.81 180)
+					(length 2.54)
+					(name "~{RST}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -8.89 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -535,18 +517,38 @@
 		)
 	)
 	(junction
-		(at 139.7 95.25)
+		(at 127 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "65a11c1b-615a-4b55-9875-f7ea4ee16ab1")
+		(uuid "333f0608-1c48-482c-9adb-a25502721934")
 	)
 	(no_connect
-		(at 119.38 104.14)
-		(uuid "be011c3e-2682-427c-934b-973fe28fce3f")
+		(at 134.62 97.79)
+		(uuid "d0e5f55c-f5f6-48ce-b918-7e4dc118aed2")
 	)
 	(wire
 		(pts
-			(xy 148.59 95.25) (xy 148.59 97.79)
+			(xy 127 90.17) (xy 127 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a83e605-58b7-41bd-b33d-01f2323ab02e")
+	)
+	(wire
+		(pts
+			(xy 127 90.17) (xy 127 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fdce1ed-86d3-4898-85d1-e1876671b05c")
+	)
+	(wire
+		(pts
+			(xy 111.76 90.17) (xy 111.76 100.33)
 		)
 		(stroke
 			(width 0)
@@ -556,17 +558,17 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 95.25) (xy 139.7 95.25)
+			(xy 137.16 102.87) (xy 134.62 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "592102b0-acc0-43ae-9c05-14ea02dd2c92")
+		(uuid "39359c59-90a3-462f-a85e-c36352ea82dd")
 	)
 	(wire
 		(pts
-			(xy 148.59 105.41) (xy 148.59 107.95)
+			(xy 111.76 107.95) (xy 111.76 110.49)
 		)
 		(stroke
 			(width 0)
@@ -576,17 +578,17 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 95.25) (xy 148.59 95.25)
+			(xy 111.76 90.17) (xy 127 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "802e5260-4b63-4594-9139-3e1a3aba5cc3")
+		(uuid "8dd94236-a009-4f3c-945a-17e189a1d779")
 	)
 	(wire
 		(pts
-			(xy 137.16 104.14) (xy 134.62 104.14)
+			(xy 116.84 100.33) (xy 119.38 100.33)
 		)
 		(stroke
 			(width 0)
@@ -596,7 +598,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 107.95) (xy 113.03 99.06)
+			(xy 127 110.49) (xy 127 107.95)
 		)
 		(stroke
 			(width 0)
@@ -604,51 +606,9 @@
 		)
 		(uuid "ae975bbb-7fb2-471e-91f1-c704430abc98")
 	)
-	(wire
-		(pts
-			(xy 110.49 95.25) (xy 119.38 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aedd6480-49af-4614-be85-f1af1e8a2b97")
-	)
-	(wire
-		(pts
-			(xy 113.03 99.06) (xy 119.38 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bde174af-acb2-426b-a952-ca0a89e15f20")
-	)
-	(wire
-		(pts
-			(xy 139.7 95.25) (xy 139.7 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5a9a637-8a6c-4f83-9b6f-c142e328463f")
-	)
 	(hierarchical_label "~{RST}"
 		(shape output)
-		(at 110.49 95.25 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "298bdd0a-107b-4603-bc33-f8bf4d0b30aa")
-	)
-	(hierarchical_label "~{MR}"
-		(shape input)
-		(at 137.16 104.14 0)
+		(at 137.16 102.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -656,11 +616,23 @@
 			)
 			(justify left)
 		)
+		(uuid "298bdd0a-107b-4603-bc33-f8bf4d0b30aa")
+	)
+	(hierarchical_label "~{MR}"
+		(shape input)
+		(at 116.84 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
 		(uuid "3882b60e-46af-4963-bfaa-a402170b0f80")
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 139.7 90.17 0)
+		(at 127 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -668,8 +640,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ffd162a-2b8b-4249-840b-857fffccf1e6")
-		(property "Reference" "#PWR059"
-			(at 139.7 93.98 0)
+		(property "Reference" "#PWR066"
+			(at 127 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -678,7 +650,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 139.7 86.0369 0)
+			(at 127 83.4969 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -686,7 +658,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 90.17 0)
+			(at 127 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -695,7 +667,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 90.17 0)
+			(at 127 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -704,7 +676,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 139.7 90.17 0)
+			(at 127 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -718,7 +690,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/61abf8ce-9ba2-4995-9a57-37e178bb3e97"
-					(reference "#PWR059")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -726,7 +698,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 148.59 101.6 180)
+		(at 111.76 104.14 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -734,7 +706,7 @@
 		(dnp no)
 		(uuid "90cf00f2-576a-41d0-bf48-549fbacbe6a2")
 		(property "Reference" "C23"
-			(at 143.51 101.6 90)
+			(at 106.68 104.14 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -742,7 +714,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 151.13 105.41 90)
+			(at 114.3 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -750,7 +722,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 147.6248 97.79 0)
+			(at 110.7948 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -759,7 +731,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 148.59 101.6 0)
+			(at 111.76 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -768,7 +740,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 148.59 101.6 0)
+			(at 111.76 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -792,7 +764,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Caravel_board:MCP1319MT-29LE-OT")
+		(lib_id "custom_symbols:MCP1319MT-29LE-OT")
 		(at 127 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -802,23 +774,25 @@
 		(fields_autoplaced yes)
 		(uuid "9b8fd3c1-4c07-4600-ac10-464eb9a5fba0")
 		(property "Reference" "U8"
-			(at 127 86.36 0)
+			(at 129.1941 91.2325 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "MCP1319MT-29LE-OT"
-			(at 127 88.9 0)
+			(at 129.1941 93.6568 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Caravel_Board:PoR_5_SOT23"
-			(at 147.32 107.95 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 127 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -870,7 +844,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 113.03 107.95 0)
+		(at 127 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -878,8 +852,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aec7f299-936a-4ab6-b4bc-e7461ce8388d")
-		(property "Reference" "#PWR058"
-			(at 113.03 114.3 0)
+		(property "Reference" "#PWR067"
+			(at 127 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -888,7 +862,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 113.03 112.0831 0)
+			(at 127 114.6231 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -896,7 +870,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 113.03 107.95 0)
+			(at 127 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -905,7 +879,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 113.03 107.95 0)
+			(at 127 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -914,7 +888,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 113.03 107.95 0)
+			(at 127 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -928,7 +902,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/61abf8ce-9ba2-4995-9a57-37e178bb3e97"
-					(reference "#PWR058")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -936,7 +910,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 148.59 107.95 0)
+		(at 111.76 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -944,8 +918,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb979c5a-0121-43f1-9d68-b0b60e12f580")
-		(property "Reference" "#PWR060"
-			(at 148.59 114.3 0)
+		(property "Reference" "#PWR065"
+			(at 111.76 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -954,7 +928,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 148.59 112.0831 0)
+			(at 111.76 114.6231 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -962,7 +936,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 107.95 0)
+			(at 111.76 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -971,7 +945,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 107.95 0)
+			(at 111.76 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -980,7 +954,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 148.59 107.95 0)
+			(at 111.76 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -994,7 +968,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/61abf8ce-9ba2-4995-9a57-37e178bb3e97"
-					(reference "#PWR060")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)

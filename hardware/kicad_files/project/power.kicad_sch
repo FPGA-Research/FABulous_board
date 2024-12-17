@@ -626,6 +626,142 @@
 				)
 			)
 		)
+		(symbol "Regulator_Linear:AMS1117"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AMS1117"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+				(at 2.54 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1A Low Dropout regulator, positive, adjustable output, SOT-223"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "linear regulator ldo adjustable positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?223*TabPin2*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AMS1117_0_1"
+				(rectangle
+					(start -5.08 -5.08)
+					(end 5.08 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "AMS1117_1_1"
+				(pin input line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "ADJ"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "VO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Regulator_Linear:AMS1117-3.3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -762,172 +898,6 @@
 				)
 			)
 		)
-		(symbol "easy_eda:SPX1117M3-L_TR"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -0.508 9.144 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SPX1117M3-L_TR"
-				(at -0.254 7.112 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "../../GitHubProjects/FABulous_board/hardware/kicad_files/external_libs/easy_eda:SOT-223-4_L6.5-W3.5-P2.30-LS7.0-BR"
-				(at 0 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://item.szlcsc.com/84517.html"
-				(at -2.286 0.127 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC" "C67402"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "C67402"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SPX1117M3-L_TR_0_1"
-				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center -3.81 3.81)
-					(radius 0.381)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "SPX1117M3-L_TR_1_1"
-				(pin input line
-					(at 0 -3.81 90)
-					(length 2.54)
-					(name "ADJ"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "VOUT"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "VIN"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 7.62 2.54 180)
-					(length 2.54) hide
-					(name "VOUT"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1 1)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -1024,6 +994,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 224.79 127)
@@ -1054,6 +1120,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "590e93f0-7160-41ca-8131-47e0e3fb223e")
+	)
+	(junction
+		(at 87.63 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59f6b143-4bd2-4bc7-a788-d1a4774eed62")
 	)
 	(junction
 		(at 74.93 109.22)
@@ -1125,6 +1197,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 109.22) (xy 95.25 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4248fabc-0a76-4f94-8a2c-5999f9489a69")
+	)
+	(wire
+		(pts
 			(xy 219.71 128.27) (xy 224.79 128.27)
 		)
 		(stroke
@@ -1145,7 +1227,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 109.22) (xy 95.25 109.22)
+			(xy 74.93 109.22) (xy 87.63 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1202,6 +1284,16 @@
 			(type default)
 		)
 		(uuid "530be626-decd-45cb-8a60-7de0f4cd246f")
+	)
+	(wire
+		(pts
+			(xy 208.28 107.95) (xy 208.28 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c4b7a02-2003-4090-828a-79b6405b1f71")
 	)
 	(wire
 		(pts
@@ -1425,16 +1517,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 106.68) (xy 208.28 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa3d200f-a459-4817-bc58-76ad69f0b3de")
-	)
-	(wire
-		(pts
 			(xy 238.76 124.46) (xy 238.76 130.81)
 		)
 		(stroke
@@ -1497,7 +1579,7 @@
 		(uuid "a15dda77-5024-46f8-9bea-86ef507922cc")
 	)
 	(hierarchical_label "3V3"
-		(shape output)
+		(shape input)
 		(at 107.95 93.98 90)
 		(fields_autoplaced yes)
 		(effects
@@ -1572,7 +1654,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "easy_eda:CASE-A_3216"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I"
 			(at 108.9152 114.3 0)
 			(effects
 				(font
@@ -1624,7 +1706,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c5d38d3-9a30-4285-aaf0-2490566a35e9")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR060"
 			(at 189.23 132.08 0)
 			(effects
 				(font
@@ -1674,7 +1756,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/0ec6fa36-eb17-4575-aede-06fec96d10db"
-					(reference "#PWR053")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -1908,7 +1990,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e553985-10e9-4694-a4e1-a7ad2bc98bc7")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR061"
 			(at 219.71 149.86 0)
 			(effects
 				(font
@@ -1958,7 +2040,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/0ec6fa36-eb17-4575-aede-06fec96d10db"
-					(reference "#PWR054")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -2043,7 +2125,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "955413d8-ea22-4a16-8483-061d30af9e02")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR064"
 			(at 252.73 132.08 0)
 			(effects
 				(font
@@ -2093,7 +2175,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/0ec6fa36-eb17-4575-aede-06fec96d10db"
-					(reference "#PWR057")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -2169,6 +2251,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 87.63 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac101f80-104f-486e-8c1b-afaad8414090")
+		(property "Reference" "#FLG05"
+			(at 87.63 107.315 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 87.63 105.0869 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 87.63 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94ee257d-b113-42bc-bcbd-2d9cff3cca7b")
+		)
+		(instances
+			(project ""
+				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/0ec6fa36-eb17-4575-aede-06fec96d10db"
+					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 74.93 115.57 0)
 		(unit 1)
@@ -2178,7 +2326,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b798dd39-04c6-4b37-8e72-ccf25f30b6e2")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR058"
 			(at 74.93 121.92 0)
 			(effects
 				(font
@@ -2228,7 +2376,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/0ec6fa36-eb17-4575-aede-06fec96d10db"
-					(reference "#PWR051")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -2333,7 +2481,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "easy_eda:CASE-A_3216"
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I"
 			(at 190.1952 114.3 0)
 			(effects
 				(font
@@ -2385,7 +2533,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6c47e7e-719b-4822-adba-ab7a45b9cceb")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR062"
 			(at 233.68 149.86 0)
 			(effects
 				(font
@@ -2435,7 +2583,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/0ec6fa36-eb17-4575-aede-06fec96d10db"
-					(reference "#PWR055")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -2451,7 +2599,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf2ba485-d3ca-4ba7-9c01-d27cf11aee23")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR059"
 			(at 107.95 121.92 0)
 			(effects
 				(font
@@ -2501,7 +2649,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/0ec6fa36-eb17-4575-aede-06fec96d10db"
-					(reference "#PWR052")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -2578,8 +2726,8 @@
 		)
 	)
 	(symbol
-		(lib_id "easy_eda:SPX1117M3-L_TR")
-		(at 208.28 102.87 0)
+		(lib_id "Regulator_Linear:AMS1117")
+		(at 208.28 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2587,7 +2735,7 @@
 		(dnp no)
 		(uuid "f2ad372b-ddd3-4422-a0e0-a349033d953e")
 		(property "Reference" "U7"
-			(at 208.026 91.44 0)
+			(at 208.026 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2595,35 +2743,33 @@
 			)
 		)
 		(property "Value" "SPX1117M3-L_TR"
-			(at 208.28 94.996 0)
+			(at 208.28 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "easy_eda:SOT-223-4_L6.5-W3.5-P2.30-LS7.0-BR"
-			(at 208.28 113.03 0)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 208.28 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://item.szlcsc.com/84517.html"
-			(at 205.994 102.743 0)
+		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+			(at 210.82 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 208.28 102.87 0)
+		(property "Description" "1A Low Dropout regulator, positive, adjustable output, SOT-223"
+			(at 208.28 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2632,7 +2778,7 @@
 			)
 		)
 		(property "LCSC" "C67402"
-			(at 208.28 102.87 0)
+			(at 208.28 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2648,9 +2794,6 @@
 		)
 		(pin "2"
 			(uuid "d76cb302-b79a-40a6-af56-3dad1eaf0212")
-		)
-		(pin "4"
-			(uuid "5ffd2f3b-7f5d-4001-9765-aef7bccd4965")
 		)
 		(instances
 			(project "FABulous_board"
@@ -2671,7 +2814,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fadce528-7fb0-4047-90bb-4c0c6f570c3d")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR063"
 			(at 241.3 149.86 0)
 			(effects
 				(font
@@ -2721,7 +2864,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/0ec6fa36-eb17-4575-aede-06fec96d10db"
-					(reference "#PWR056")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)

@@ -49,10 +49,15 @@ def upload_bitstream(bitstream_file: str, baudrate: int, ftdi_name: str) -> None
     logger.info(f"Using device at {device_path}")
 
     data = read_bitstream_data(bitstream_file)
+
+    
+    # Needed to bring the UART module into desync state
+    desync_word = [0x00, 0x10, 0, 0]
     logger.info("Uploading bitstream...")
 
     with serial.Serial(device_path, baudrate) as ser:
         ser.write(data)
+        ser.write(bytearray(desync_word))
 
     logger.info("Bitstream transmitted!")
 

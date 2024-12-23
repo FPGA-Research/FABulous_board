@@ -45,4 +45,8 @@ fp-info-cache
 
 # pycache
 __pycache__
-!software/fabrics/*
+
+# don't ignore fabric files
+!software/fabrics/mpw2/*
+!software/fabrics/mpw5/*
+

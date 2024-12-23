@@ -45,3 +45,4 @@ fp-info-cache
 
 # pycache
 __pycache__
+!software/fabrics/*

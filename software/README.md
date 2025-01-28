@@ -5,11 +5,8 @@
 `clock_setup` : A module to set up the PLL chip on the board. Requires an
 additional compatible FTDI adapter.
 
-`clock_setup` : An Arduino project quickly set up to program boards compatible
-to the Arduino IDE.
-
-`clock_setup` : An Arduino project quickly set up to program boards compatible
-to the Arduino IDE.
+`clock_setup_using_arduino_code/clock_setup` : An Arduino project quickly set
+up to flash a firmware for configuring the PLL chip to compatible microcontrollers. 
 
 `modules` : Different modules needed for the main script.
 

@@ -1,7 +1,8 @@
 PRJ_DIR = $(realpath .)
 
 # ============================================================================= ARGS
-PATH_SKETCH	:= $(PRJ_DIR)/clock_setup/clock_setup.ino
+PATH_SKETCH		:= $(PRJ_DIR)/clock_setup/clock_setup.ino
+PATH_INSTALL	:= $$HOME/arduino_cli
 
 PORT		:= /dev/ttyACM0
 
@@ -15,13 +16,10 @@ FQBN		:= WCH:ch32v:CH32V00x_EVT
 # setup and install arduino CLI
 setup-arduino-cli:
 	@ echo " "
-	[ -d ~/arduino_cli ] || mkdir -p ~/arduino_cli; \
-		cd ~/arduino_cli; \
-		curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh; \
-		echo "========== Verifying installation..."; \
-		source $(HOME)/.bashrc; \
-		which arduino-cli; \
-		arduino-cli version
+	@ echo "Installation dir: $(PATH_INSTALL)"
+	[ -d $(PATH_INSTALL)/arduino_cli ] || mkdir -p $(PATH_INSTALL)/arduino_cli; \
+		cd $(PATH_INSTALL)/arduino_cli; \
+		curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh
 
 # setup board files for CH32V003 on arudino
 setup-board-files:
@@ -45,9 +43,9 @@ setup-board-files:
 # show all connected boards/chips via USB
 list-boards:
 	@ echo " "
-	@ echo "==================== List connected boards"; \
+	@ echo "==================== Connected boards"; \
 	arduino-cli board list && \
-	@ echo "==================== List Ch32V boards available"; \
+	@ echo "==================== Available CH32V boards"; \
 	arduino-cli board listall | grep CH32
 
 # compile the arduino sketch for the chip

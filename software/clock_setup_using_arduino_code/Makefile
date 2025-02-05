@@ -44,7 +44,7 @@ setup-board-files:
 list-boards:
 	@ echo " "
 	@ echo "==================== Connected boards"; \
-	arduino-cli board list && \
+	arduino-cli board list
 	@ echo "==================== Available CH32V boards"; \
 	arduino-cli board listall | grep CH32
 

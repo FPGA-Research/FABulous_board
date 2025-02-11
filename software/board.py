@@ -103,7 +103,7 @@ def setup_parser() -> argparse.Namespace:
     upload_parser.add_argument(
         "-r",
         "--reset",
-        help="""Specify if the device should be reset. Defaults to False).""",
+        help="""Specify if the device should be reset. Defaults to False.""",
         type=bool,
         default=False,
     )

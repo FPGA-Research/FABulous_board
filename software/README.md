@@ -8,6 +8,13 @@ additional compatible FTDI adapter.
 `clock_setup_using_arduino_code/clock_setup` : An Arduino project quickly set
 up to flash a firmware for configuring the PLL chip to compatible microcontrollers. 
 
+`fabrics`: Files for the MPW-2 and MPW-5 fabrics. These include the following
+for the respective fabric:
+  - The `csv` file
+  - The top wrapper (essentially the constraints file)
+  - An example bitstream (has to be updated, and the user design has to be
+  added)
+
 `modules` : Different modules needed for the main script.
 
 `upload_bitstream` : Contains a script to upload a bitstream
@@ -15,6 +22,10 @@ using the UART protocol.
 
 `board.py` : The main script which provides functionality to interact with the
 board. Described in detail below.
+
+> [!NOTE]
+You can find a checklist for things that have to be considered when uploading a
+bitstream [here](../doc/setup_checklist.md).
 
 ## Board CLI
 
@@ -35,7 +46,7 @@ board.py [-h] [-i DEVICE_ID] [-v] {config_clocks,upload} ...
 Below, the main use cases are given as examples. By default, devices with the VID
 `0403` and PID `6014` and a baud rate of 57600 are used.
 
-> [!IMPORTANT]:
+> [!IMPORTANT]
 > Make sure to adjust the files to your local files.
 
 

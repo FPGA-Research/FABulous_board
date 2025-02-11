@@ -95,14 +95,15 @@ def setup_parser() -> argparse.Namespace:
     upload_parser.add_argument(
         "-b",
         "--baudrate",
-        help="Specifies the baudrate. Defaults to 57600 which is the eFPGAs baud rate at 10 MHz.",
+        help="Specifies the baudrate. Defaults to 57600 which is the baud rate"
+        + " of MPW-2 at 10 MHz and of MPW-5 at 12.5 MHz.",
         type=int,
         default=57600,
     )
     upload_parser.add_argument(
         "-r",
         "--reset",
-        help="""Specify if the device should be reset. Defaults to False).""",
+        help="""Specify if the device should be reset. Defaults to False.""",
         type=bool,
         default=False,
     )

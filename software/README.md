@@ -23,6 +23,10 @@ using the UART protocol.
 `board.py` : The main script which provides functionality to interact with the
 board. Described in detail below.
 
+> [!NOTE]
+You can find a checklist for things that have to be considered when uploading a
+bitstream [here](../doc/setup_checklist.md).
+
 ## Board CLI
 
 The main functionality of `board.py` is uploading a bitstream over UART to the

@@ -8,6 +8,13 @@ additional compatible FTDI adapter.
 `clock_setup_using_arduino_code/clock_setup` : An Arduino project quickly set
 up to flash a firmware for configuring the PLL chip to compatible microcontrollers. 
 
+`fabrics`: Files for the MPW-2 and MPW-5 fabrics. These include the following
+for the respective fabric:
+  - The `csv` file
+  - The top wrapper (essentially the constraints file)
+  - An example bitstream (has to be updated, and the user design has to be
+  added)
+
 `modules` : Different modules needed for the main script.
 
 `upload_bitstream` : Contains a script to upload a bitstream

@@ -30,9 +30,9 @@ For flashing the firmware, refer to [this repository](https://github.com/IAmMarc
 
 ## Setting the Jumpers
 If the jumpers on your board are not set already, set them as follows:
-- `J6`: Connect eFPGA Rx and FTDI Tx
-- `J5`: Set for uploading a bitstream, unset for uploading the Caravel firmware
-- `J8`: Set the desired clock output of the PLL
-- `J4`: Set the desired Voltage
-- `J11` and `J13` set the desired internal clock
 - `J2` and `J3`: Connect `mprj_io[36]/[37]` either to the Bitbang inputs of the fabric or to pins `22`/`23` of `J7`, depending on your use case (most likely you want to use `22`/`23`)
+- `J5`: Set for uploading a bitstream, unset for uploading the Caravel firmware
+- `J4`: Set the desired Voltage
+- `J6`: Connect eFPGA Rx and FTDI Tx
+- `J8`: Set the desired clock output of the PLL
+- `J11` and `J13` set the desired internal clock

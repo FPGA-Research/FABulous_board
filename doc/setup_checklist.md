@@ -5,6 +5,7 @@ the chip bring-up and testing, even though some steps seem trivial. The first
 group only has to be checked if the correct firmware has not been flashed to the 
 board and can be skipped otherwise. Feel free to extend this list if you find
 more things to be considered.
+For flashing the firmware, refer to [this repository](https://github.com/IAmMarcelJung/fabulous-mpw-bringup).
 
 ## Flashing the Firmware
 - Change the chip (if another one should be used/tested)

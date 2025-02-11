@@ -35,7 +35,7 @@ board.py [-h] [-i DEVICE_ID] [-v] {config_clocks,upload} ...
 Below, the main use cases are given as examples. By default, devices with the VID
 `0403` and PID `6014` and a baud rate of 57600 are used.
 
-> [!IMPORTANT]:
+> [!IMPORTANT]
 > Make sure to adjust the files to your local files.
 
 

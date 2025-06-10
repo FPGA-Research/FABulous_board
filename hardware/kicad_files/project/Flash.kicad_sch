@@ -1140,7 +1140,6 @@
 	)
 	(label "Flash_SPI.SCK"
 		(at 90.17 72.39 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1151,7 +1150,6 @@
 	)
 	(label "Flash_SPI.PICO"
 		(at 90.17 74.93 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1162,7 +1160,6 @@
 	)
 	(label "Flash_SPI.CS"
 		(at 90.17 69.85 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1173,7 +1170,6 @@
 	)
 	(label "Flash_SPI.POCI"
 		(at 90.17 77.47 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1185,7 +1181,6 @@
 	(hierarchical_label "~{Flash_HOLD}"
 		(shape input)
 		(at 90.17 82.55 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1197,7 +1192,6 @@
 	(hierarchical_label "~{Flash_WP}"
 		(shape input)
 		(at 90.17 80.01 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1209,7 +1203,6 @@
 	(hierarchical_label "Flash_SPI{SPI}"
 		(shape bidirectional)
 		(at 69.85 80.01 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

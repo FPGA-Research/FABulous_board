@@ -1395,7 +1395,6 @@
 	)
 	(label "I2C.SCL"
 		(at 101.6 105.41 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1406,7 +1405,6 @@
 	)
 	(label "I2C.SDA"
 		(at 101.6 107.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1418,7 +1416,6 @@
 	(hierarchical_label "CLK_efpga_1"
 		(shape output)
 		(at 175.26 105.41 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1430,7 +1427,6 @@
 	(hierarchical_label "I2C{SDA,SCL}"
 		(shape bidirectional)
 		(at 93.98 113.03 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1442,7 +1438,6 @@
 	(hierarchical_label "CLK_efpga_0"
 		(shape output)
 		(at 175.26 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1454,7 +1449,6 @@
 	(hierarchical_label "CLK_caravel"
 		(shape output)
 		(at 175.26 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

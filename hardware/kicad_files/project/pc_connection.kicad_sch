@@ -2400,10 +2400,22 @@
 		(uuid "294d0565-ba19-4e9f-8eba-69524d20fa5b")
 	)
 	(junction
+		(at 63.5 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c3a81b5-5d87-48ab-aac1-86ada394794a")
+	)
+	(junction
 		(at 233.68 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "39490338-8711-42d0-a9b2-620cf854c9db")
+	)
+	(junction
+		(at 91.44 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43d1ac0f-917a-4fe3-8768-4496b31559f5")
 	)
 	(junction
 		(at 205.74 148.59)
@@ -2502,6 +2514,18 @@
 		(uuid "cb8c6a76-f957-40fc-9284-659dba4bcadf")
 	)
 	(junction
+		(at 105.41 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd3cf726-95e4-4922-a82b-ecd9d523fe3f")
+	)
+	(junction
+		(at 63.5 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cdfd6b13-0585-4d19-96b3-20e8a69cceb8")
+	)
+	(junction
 		(at 190.5 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2556,10 +2580,6 @@
 		(uuid "1b7732bb-c4c1-4cd9-85f8-972ca9cced56")
 	)
 	(no_connect
-		(at 60.96 91.44)
-		(uuid "2c7fefa5-0319-4c7e-bd8e-e1edade3f098")
-	)
-	(no_connect
 		(at 60.96 99.06)
 		(uuid "2fd9accc-014c-4e14-a802-bc7d7efb7a3f")
 	)
@@ -2590,10 +2610,6 @@
 	(no_connect
 		(at 219.71 106.68)
 		(uuid "c3c37d02-8742-4c94-af34-742f7e1a7134")
-	)
-	(no_connect
-		(at 60.96 93.98)
-		(uuid "d386559f-ff24-4259-9fb6-5088cb9b53b2")
 	)
 	(no_connect
 		(at 173.99 106.68)
@@ -2706,6 +2722,16 @@
 			(type default)
 		)
 		(uuid "10141aca-4d9a-4404-89c2-ce08f15eb1aa")
+	)
+	(wire
+		(pts
+			(xy 60.96 93.98) (xy 63.5 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13bb2e9b-7a46-4854-b224-b0de81719525")
 	)
 	(wire
 		(pts
@@ -2889,13 +2915,23 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 96.52) (xy 105.41 96.52)
+			(xy 60.96 96.52) (xy 63.5 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "346433bb-c590-4341-875a-56576afd8dc7")
+	)
+	(wire
+		(pts
+			(xy 91.44 88.9) (xy 173.99 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "349c4664-3ae9-4f37-9f27-464a1c4b4812")
 	)
 	(wire
 		(pts
@@ -3066,16 +3102,6 @@
 			(type default)
 		)
 		(uuid "51b22ed1-c49a-4ff3-948b-948bce11a9f8")
-	)
-	(wire
-		(pts
-			(xy 170.18 91.44) (xy 173.99 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53e018bd-9a23-42b0-81eb-c337fd22426a")
 	)
 	(wire
 		(pts
@@ -3309,7 +3335,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 88.9) (xy 91.44 88.9)
+			(xy 60.96 88.9) (xy 63.5 88.9)
 		)
 		(stroke
 			(width 0)
@@ -3336,6 +3362,16 @@
 			(type default)
 		)
 		(uuid "845460cb-c87d-4c00-a33d-d0b1b25dd63f")
+	)
+	(wire
+		(pts
+			(xy 63.5 88.9) (xy 63.5 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "846e0954-c0b5-4e2a-99f2-02b6eaba06f1")
 	)
 	(wire
 		(pts
@@ -3416,6 +3452,16 @@
 			(type default)
 		)
 		(uuid "8ec636ec-1255-4c86-b59e-2c0b7467f744")
+	)
+	(wire
+		(pts
+			(xy 63.5 88.9) (xy 91.44 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ee0bff5-7804-4cc4-8d2d-c9d63560d55d")
 	)
 	(wire
 		(pts
@@ -3509,13 +3555,23 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 88.9) (xy 173.99 88.9)
+			(xy 60.96 91.44) (xy 63.5 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bfe75159-8d79-44e3-9a9e-c7745d83651e")
+		(uuid "bbb02e38-2820-4aa8-9b0e-a933f3cf27ce")
+	)
+	(wire
+		(pts
+			(xy 105.41 91.44) (xy 173.99 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd3d203a-0f44-4fbf-a4b0-6469d7c2c05c")
 	)
 	(wire
 		(pts
@@ -3559,6 +3615,26 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 96.52) (xy 105.41 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9932d49-d410-4d6b-8ea7-b0623e2b1cd6")
+	)
+	(wire
+		(pts
+			(xy 63.5 93.98) (xy 63.5 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc9894d7-5c00-4986-b554-0e54ce9e9b54")
+	)
+	(wire
+		(pts
 			(xy 182.88 151.13) (xy 182.88 148.59)
 		)
 		(stroke
@@ -3576,6 +3652,16 @@
 			(type default)
 		)
 		(uuid "d3280e68-5174-4397-abf6-1ee0c3612d1b")
+	)
+	(wire
+		(pts
+			(xy 105.41 91.44) (xy 105.41 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d344ca03-3252-4018-a026-f036e7a0fbed")
 	)
 	(wire
 		(pts
@@ -3871,7 +3957,6 @@
 	)
 	(label "Shield"
 		(at 38.1 116.84 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3882,7 +3967,6 @@
 	)
 	(label "TX_LED"
 		(at 231.14 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3893,7 +3977,6 @@
 	)
 	(label "~{RESET}"
 		(at 156.21 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3904,7 +3987,6 @@
 	)
 	(label "FTDI_SPI.SCK"
 		(at 219.71 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3915,7 +3997,6 @@
 	)
 	(label "FTDI_SPI.POCI"
 		(at 219.71 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3926,7 +4007,6 @@
 	)
 	(label "D-"
 		(at 82.55 88.9 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3937,7 +4017,6 @@
 	)
 	(label "D+"
 		(at 170.18 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3948,7 +4027,6 @@
 	)
 	(label "RX_LED"
 		(at 231.14 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3959,7 +4037,6 @@
 	)
 	(label "REF"
 		(at 156.21 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3970,7 +4047,6 @@
 	)
 	(label "FTDI_SPI.CS"
 		(at 219.71 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3981,7 +4057,6 @@
 	)
 	(label "D-"
 		(at 170.18 88.9 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3992,7 +4067,6 @@
 	)
 	(label "D+"
 		(at 97.79 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4003,7 +4077,6 @@
 	)
 	(label "FTDI_SPI.PICO"
 		(at 219.71 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4014,7 +4087,6 @@
 	)
 	(label "VCCCORE"
 		(at 130.81 81.28 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4025,7 +4097,6 @@
 	)
 	(label "VCCA"
 		(at 137.16 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4037,7 +4108,6 @@
 	(hierarchical_label "~{MR}"
 		(shape output)
 		(at 223.52 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4049,7 +4119,6 @@
 	(hierarchical_label "~{UART_EN}"
 		(shape output)
 		(at 223.52 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4061,7 +4130,6 @@
 	(hierarchical_label "FTDI_SPI{SPI}"
 		(shape output)
 		(at 236.22 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4073,7 +4141,6 @@
 	(hierarchical_label "5V"
 		(shape output)
 		(at 64.77 72.39 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

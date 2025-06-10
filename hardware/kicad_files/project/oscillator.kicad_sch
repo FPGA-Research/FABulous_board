@@ -670,7 +670,6 @@
 	(hierarchical_label "OSC2"
 		(shape bidirectional)
 		(at 161.29 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -682,7 +681,6 @@
 	(hierarchical_label "OSC1"
 		(shape bidirectional)
 		(at 121.92 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

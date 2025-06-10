@@ -1547,7 +1547,6 @@
 	)
 	(label "ADJ_1_6"
 		(at 233.68 130.81 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1558,7 +1557,6 @@
 	)
 	(label "ADJ_1_45"
 		(at 238.76 127 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1569,7 +1567,6 @@
 	)
 	(label "ADJ"
 		(at 209.55 128.27 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1581,7 +1578,6 @@
 	(hierarchical_label "3V3"
 		(shape input)
 		(at 107.95 93.98 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1593,7 +1589,6 @@
 	(hierarchical_label "5V"
 		(shape input)
 		(at 189.23 91.44 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1605,7 +1600,6 @@
 	(hierarchical_label "1V8"
 		(shape output)
 		(at 233.68 91.44 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1617,7 +1611,6 @@
 	(hierarchical_label "5V"
 		(shape input)
 		(at 74.93 92.71 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

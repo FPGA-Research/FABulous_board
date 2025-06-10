@@ -609,7 +609,6 @@
 	(hierarchical_label "~{RST}"
 		(shape output)
 		(at 137.16 102.87 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -621,7 +620,6 @@
 	(hierarchical_label "~{MR}"
 		(shape input)
 		(at 116.84 100.33 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

@@ -3711,7 +3711,6 @@
 	)
 	(label "mprj_io.29"
 		(at 71.12 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3722,7 +3721,6 @@
 	)
 	(label "mprj_io.17"
 		(at 71.12 62.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3733,7 +3731,6 @@
 	)
 	(label "mprj_io.24"
 		(at 48.26 72.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3744,7 +3741,6 @@
 	)
 	(label "SPI.SCK"
 		(at 138.43 125.73 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3755,7 +3751,6 @@
 	)
 	(label "mprj_io.37"
 		(at 71.12 87.63 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3766,7 +3761,6 @@
 	)
 	(label "mprj_io.16"
 		(at 48.26 62.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3777,7 +3771,6 @@
 	)
 	(label "mprj_io.15"
 		(at 71.12 59.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3788,7 +3781,6 @@
 	)
 	(label "mprj_io.18"
 		(at 48.26 64.77 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3799,7 +3791,6 @@
 	)
 	(label "SPI.CS"
 		(at 138.43 123.19 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3810,7 +3801,6 @@
 	)
 	(label "mprj_io.27"
 		(at 71.12 74.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3821,7 +3811,6 @@
 	)
 	(label "mprj_io.21"
 		(at 71.12 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3832,7 +3821,6 @@
 	)
 	(label "Flash_SPI.SCK"
 		(at 177.8 130.81 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3843,7 +3831,6 @@
 	)
 	(label "mprj_io.20"
 		(at 48.26 67.31 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3854,7 +3841,6 @@
 	)
 	(label "I2C.SCL"
 		(at 223.52 132.08 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3865,7 +3851,6 @@
 	)
 	(label "mprj_io.35"
 		(at 71.12 85.09 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3876,7 +3861,6 @@
 	)
 	(label "mprj_io.31"
 		(at 71.12 80.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3887,7 +3871,6 @@
 	)
 	(label "mprj_io.28"
 		(at 48.26 77.47 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3898,7 +3881,6 @@
 	)
 	(label "mprj_io.36"
 		(at 58.42 87.63 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3909,7 +3891,6 @@
 	)
 	(label "mprj_io.19"
 		(at 71.12 64.77 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3920,7 +3901,6 @@
 	)
 	(label "mprj_io.22"
 		(at 48.26 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3931,7 +3911,6 @@
 	)
 	(label "mprj_io.23"
 		(at 71.12 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3942,7 +3921,6 @@
 	)
 	(label "SPI.PICO"
 		(at 138.43 118.11 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3953,7 +3931,6 @@
 	)
 	(label "SPI.POCI"
 		(at 138.43 120.65 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3964,7 +3941,6 @@
 	)
 	(label "Flash_SPI.POCI"
 		(at 177.8 125.73 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3975,7 +3951,6 @@
 	)
 	(label "Flash_SPI.PICO"
 		(at 177.8 123.19 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3986,7 +3961,6 @@
 	)
 	(label "Flash_SPI.CS"
 		(at 177.8 128.27 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3997,7 +3971,6 @@
 	)
 	(label "mprj_io.14"
 		(at 48.26 59.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4008,7 +3981,6 @@
 	)
 	(label "mprj_io.32"
 		(at 48.26 82.55 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4019,7 +3991,6 @@
 	)
 	(label "mprj_io.25"
 		(at 71.12 72.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4030,7 +4001,6 @@
 	)
 	(label "mprj_io.33"
 		(at 71.12 82.55 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4041,7 +4011,6 @@
 	)
 	(label "mprj_io.26"
 		(at 48.26 74.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4052,7 +4021,6 @@
 	)
 	(label "mprj_io.34"
 		(at 48.26 85.09 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4063,7 +4031,6 @@
 	)
 	(label "mprj_io.30"
 		(at 48.26 80.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4074,7 +4041,6 @@
 	)
 	(label "I2C.SDA"
 		(at 223.52 129.54 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4086,7 +4052,6 @@
 	(hierarchical_label "efpga_uart_rx"
 		(shape output)
 		(at 54.61 137.16 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4098,7 +4063,6 @@
 	(hierarchical_label "~{Flash_HOLD}"
 		(shape output)
 		(at 193.04 118.11 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4110,7 +4074,6 @@
 	(hierarchical_label "SPI{SPI}"
 		(shape bidirectional)
 		(at 132.08 115.57 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4122,7 +4085,6 @@
 	(hierarchical_label "CLK_SEL_1"
 		(shape output)
 		(at 255.27 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4134,7 +4096,6 @@
 	(hierarchical_label "CLK_efpga_0"
 		(shape input)
 		(at 147.32 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4146,7 +4107,6 @@
 	(hierarchical_label "CLK_efpga_1"
 		(shape input)
 		(at 147.32 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4158,7 +4118,6 @@
 	(hierarchical_label "Caravel_UART_RX"
 		(shape output)
 		(at 54.61 142.24 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4170,7 +4129,6 @@
 	(hierarchical_label "~{Flash_WP}"
 		(shape output)
 		(at 193.04 120.65 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4182,7 +4140,6 @@
 	(hierarchical_label "efpga_uart_rx"
 		(shape input)
 		(at 36.83 144.78 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4194,7 +4151,6 @@
 	(hierarchical_label "Flash_SPI{SPI}"
 		(shape bidirectional)
 		(at 200.66 133.35 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4206,7 +4162,6 @@
 	(hierarchical_label "CLK_efpga"
 		(shape output)
 		(at 147.32 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4218,7 +4173,6 @@
 	(hierarchical_label "FTDI_UART_RX"
 		(shape output)
 		(at 36.83 139.7 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4230,7 +4184,6 @@
 	(hierarchical_label "I2C{I2C}"
 		(shape bidirectional)
 		(at 237.49 135.89 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4242,7 +4195,6 @@
 	(hierarchical_label "Caravel_UART_TX"
 		(shape input)
 		(at 36.83 142.24 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4254,7 +4206,6 @@
 	(hierarchical_label "mprj_io.[14..37]"
 		(shape bidirectional)
 		(at 41.91 92.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4266,7 +4217,6 @@
 	(hierarchical_label "CLK_SEL_0"
 		(shape output)
 		(at 213.36 69.85 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4278,7 +4228,6 @@
 	(hierarchical_label "FTDI_UART_TX"
 		(shape input)
 		(at 54.61 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

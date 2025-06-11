@@ -35224,18 +35224,6 @@
 			(justify left)
 		)
 	)
-	(gr_text "Marcel Jung"
-		(at 104.648 71.628 0)
-		(layer "F.SilkS")
-		(uuid "8963e1c1-b978-4353-83dd-f376c52dbc95")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left bottom)
-		)
-	)
 	(gr_text "~{WP}"
 		(at 170.688 129.667 90)
 		(layer "F.SilkS")
@@ -35440,7 +35428,7 @@
 			(justify left)
 		)
 	)
-	(gr_text "FABulous Board 1.0"
+	(gr_text "FABulous Board ${REVISION}"
 		(at 104.648 70.104 0)
 		(layer "F.SilkS")
 		(uuid "de9bb406-2496-499d-987c-d9240fe2865b")

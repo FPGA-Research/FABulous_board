@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(date "2024-05-30")
-		(rev "0.1")
+		(rev "0.1.1")
 	)
 	(lib_symbols
 		(symbol "Device:C"

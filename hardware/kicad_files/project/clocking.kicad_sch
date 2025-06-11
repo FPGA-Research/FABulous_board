@@ -524,7 +524,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "Y"
 				(at -8.89 11.43 0)
 				(effects
 					(font
@@ -1937,7 +1937,7 @@
 		(dnp no)
 		(uuid "bf351db7-c8d2-482a-846b-1e293cd92098")
 		(property "Reference" "X2"
-			(at 123.444 100.584 90)
+			(at 122.936 101.346 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1945,7 +1945,7 @@
 			)
 		)
 		(property "Value" "NX3225GA-25_000M-STD-CRG-2"
-			(at 124.714 89.916 90)
+			(at 126.746 76.454 0)
 			(effects
 				(font
 					(size 1.27 1.27)

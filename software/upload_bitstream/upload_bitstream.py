@@ -32,7 +32,9 @@ def read_bitstream_data(bitstream_file: str) -> bytearray:
     return data
 
 
-def upload_bitstream(bitstream_file: str, baudrate: int, ftdi_name: str) -> None:
+def upload_bitstream(
+    bitstream_file: str, baudrate: int, ftdi_name: str, port: str
+) -> None:
     """Upload the bitstream to the eFPGA.
 
     :param bitstream_file: The bitstream file to be uploaded.
@@ -42,22 +44,21 @@ def upload_bitstream(bitstream_file: str, baudrate: int, ftdi_name: str) -> None
     :param ftdi_name: The name of the FTDI chip to be used.
     :type bitstream_file: str
     """
-    logger.info("Checking device...")
+    if not port:
+        logger.info("Checking device...")
 
-    device_path = get_device_path_for_device_id(ftdi_name)
+        device_path = get_device_path_for_device_id(ftdi_name)
+    else:
+        device_path = port
 
     logger.info(f"Using device at {device_path}")
 
     data = read_bitstream_data(bitstream_file)
 
-    
-    # Needed to bring the UART module into desync state
-    desync_word = [0x00, 0x10, 0, 0]
     logger.info("Uploading bitstream...")
 
     with serial.Serial(device_path, baudrate) as ser:
         ser.write(data)
-        ser.write(bytearray(desync_word))
 
     logger.info("Bitstream transmitted!")
 
@@ -88,6 +89,12 @@ def __parse_arguments() -> argparse.Namespace:
         type=str,
         default=DEFAULT_FTDI_ID,
     )
+    parser.add_argument(
+        "-p",
+        "--port",
+        help="The serial port to use for uploading the bitstream.",
+        type=str,
+    )
     args = parser.parse_args()
     return args
 
@@ -95,7 +102,7 @@ def __parse_arguments() -> argparse.Namespace:
 def main() -> None:
     """The main function containing the application logic"""
     args = __parse_arguments()
-    upload_bitstream(args.bitstream_file, args.baudrate, args.device_id)
+    upload_bitstream(args.bitstream_file, args.baudrate, args.device_id, args.port)
 
 
 if __name__ == "__main__":

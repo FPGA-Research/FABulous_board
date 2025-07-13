@@ -38,7 +38,7 @@ def setup_logger(verbosity: int):
             "<level>{message}</level>"
         )
     else:
-        log_format = "[<level>{level:}</level>]: " "<level>{message}</level>"
+        log_format = "[<level>{level:}</level>]: <level>{message}</level>"
 
     # Add logger to write logs to stdout
     logger.add(sys.stdout, format=log_format, level="DEBUG", colorize=True)
@@ -107,16 +107,22 @@ def setup_parser() -> argparse.Namespace:
         default=False,
     )
     upload_parser.add_argument(
-        "-p",
+        "-u",
         "--usb_port",
         help="""The USB port to be turned off for the device reset (required if
         the device should be reset).""",
         type=str,
     )
     upload_parser.add_argument(
+        "-p",
+        "--port",
+        help="The serial port to use for uploading the bitstream.",
+        type=str,
+    )
+    upload_parser.add_argument(
         "-l",
         "--location",
-        help="The location (USB hub) of the USB port to be turned off." "",
+        help="The location (USB hub) of the USB port to be turned off.",
         type=str,
     )
 
@@ -155,7 +161,9 @@ def main():
                 if args.reset:
                     power_cycle_usb_port(args.location, args.usb_port)
 
-                upload_bitstream(args.bitstream_file, args.baudrate, args.device_id)
+                upload_bitstream(
+                    args.bitstream_file, args.baudrate, args.device_id, args.port
+                )
 
             case _:
                 # Should already be handled by argparse
@@ -178,5 +186,4 @@ def main():
 
 
 if __name__ == "__main__":
-
     main()

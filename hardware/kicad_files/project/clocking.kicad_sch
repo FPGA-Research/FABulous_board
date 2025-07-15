@@ -7,7 +7,7 @@
 	(title_block
 		(title "Clocking")
 		(date "2024-05-30")
-		(rev "0.1.1")
+		(rev "0.2.0")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -1025,6 +1025,10 @@
 		(color 0 0 0 0)
 		(uuid "a84cd203-f3d1-4213-a383-42ddb8a8c299")
 	)
+	(no_connect
+		(at 170.18 105.41)
+		(uuid "2100afa5-91e8-4714-93a7-2f1bd297b7ae")
+	)
 	(bus_entry
 		(at 100.33 105.41)
 		(size -2.54 2.54)
@@ -1162,16 +1166,6 @@
 			(type default)
 		)
 		(uuid "39944355-a005-4c1c-b1b2-c33644d60e19")
-	)
-	(wire
-		(pts
-			(xy 170.18 105.41) (xy 175.26 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b7af902-50d5-4cc6-83d0-6239e20e553e")
 	)
 	(wire
 		(pts
@@ -1413,17 +1407,6 @@
 		)
 		(uuid "95a98b82-e26c-4a83-bf75-9d2220e3aafb")
 	)
-	(hierarchical_label "CLK_efpga_1"
-		(shape output)
-		(at 175.26 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "666bbac4-5b12-4dd8-95a1-d304bc950ee1")
-	)
 	(hierarchical_label "I2C{SDA,SCL}"
 		(shape bidirectional)
 		(at 93.98 113.03 180)
@@ -1435,7 +1418,7 @@
 		)
 		(uuid "6ea7456b-1733-4d2d-8a6c-7553a2987e59")
 	)
-	(hierarchical_label "CLK_efpga_0"
+	(hierarchical_label "CLK_efpga"
 		(shape output)
 		(at 175.26 100.33 0)
 		(effects
@@ -1467,7 +1450,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "007bd6c0-b864-40ea-bb1d-a864c113ffc9")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR105"
 			(at 132.08 120.65 0)
 			(effects
 				(font
@@ -1517,7 +1500,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
-					(reference "#PWR086")
+					(reference "#PWR105")
 					(unit 1)
 				)
 			)
@@ -1533,7 +1516,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1172fae2-ee59-4ee4-89c2-34b4225be713")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR107"
 			(at 154.94 83.82 0)
 			(effects
 				(font
@@ -1583,7 +1566,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
-					(reference "#PWR088")
+					(reference "#PWR107")
 					(unit 1)
 				)
 			)
@@ -1599,7 +1582,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "327505ae-1e02-40a4-8e59-e9f0043a117f")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR102"
 			(at 109.22 87.63 0)
 			(effects
 				(font
@@ -1649,7 +1632,7 @@
 		(instances
 			(project ""
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
-					(reference "#PWR083")
+					(reference "#PWR102")
 					(unit 1)
 				)
 			)
@@ -1665,7 +1648,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d6b9e45-d972-43d2-b1fa-d76cd0bbb006")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR106"
 			(at 138.43 120.65 0)
 			(effects
 				(font
@@ -1715,7 +1698,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
-					(reference "#PWR087")
+					(reference "#PWR106")
 					(unit 1)
 				)
 			)
@@ -1731,7 +1714,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "404f364c-09a9-48a9-9af1-0aed1efbda7d")
-		(property "Reference" "R24"
+		(property "Reference" "R27"
 			(at 110.998 88.9578 0)
 			(effects
 				(font
@@ -1785,7 +1768,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
-					(reference "R24")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -1801,7 +1784,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49507949-de64-4003-9590-1dc7c7b570bc")
-		(property "Reference" "R25"
+		(property "Reference" "R28"
 			(at 118.618 88.9578 0)
 			(effects
 				(font
@@ -1855,7 +1838,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
-					(reference "R25")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -1871,7 +1854,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80ce7a29-fd5f-4cb2-b5c4-60792046bfb5")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR104"
 			(at 119.38 120.65 0)
 			(effects
 				(font
@@ -1921,7 +1904,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
-					(reference "#PWR085")
+					(reference "#PWR104")
 					(unit 1)
 				)
 			)
@@ -2019,7 +2002,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c25afe3e-ea40-4e65-a06c-dc82467a30a9")
-		(property "Reference" "C24"
+		(property "Reference" "C25"
 			(at 144.78 80.0565 90)
 			(effects
 				(font
@@ -2071,7 +2054,7 @@
 		(instances
 			(project ""
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
-					(reference "C24")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -2087,7 +2070,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d35d858a-f901-42b5-907a-e9b9e31a7190")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR108"
 			(at 157.48 120.65 0)
 			(effects
 				(font
@@ -2137,7 +2120,7 @@
 		(instances
 			(project ""
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
-					(reference "#PWR089")
+					(reference "#PWR108")
 					(unit 1)
 				)
 			)
@@ -2152,7 +2135,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d4498859-92e5-43e4-9631-dc31a13a0954")
-		(property "Reference" "U11"
+		(property "Reference" "U12"
 			(at 163.576 86.36 0)
 			(effects
 				(font
@@ -2179,7 +2162,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.silabs.com/documents/public/data-sheets/Si5351-B.pdf"
+		(property "Datasheet" "https://www.skyworksinc.com/-/media/Skyworks/SL/documents/public/data-sheets/Si5351-B.pdf"
 			(at 148.59 102.87 0)
 			(effects
 				(font
@@ -2239,7 +2222,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
-					(reference "U11")
+					(reference "U12")
 					(unit 1)
 				)
 			)
@@ -2255,7 +2238,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e453a9f0-c1e0-477f-adc1-73cc9b130ebe")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR103"
 			(at 116.84 87.63 0)
 			(effects
 				(font
@@ -2305,7 +2288,7 @@
 		(instances
 			(project ""
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/f10cc47a-6997-4ad5-9048-8515ebe6d2fe"
-					(reference "#PWR084")
+					(reference "#PWR103")
 					(unit 1)
 				)
 			)

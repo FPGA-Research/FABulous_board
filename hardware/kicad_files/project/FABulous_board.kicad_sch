@@ -685,126 +685,6 @@
 				)
 			)
 		)
-		(symbol "power:+5V"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -1011,10 +891,10 @@
 		(uuid "023c3c17-653f-4420-86ab-340c5e54efb2")
 	)
 	(junction
-		(at 57.15 53.34)
+		(at 87.63 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d99ca434-cfee-4523-9f7a-37f10b1b9fb6")
+		(uuid "4022f71a-d5a4-440d-a072-eededff2828b")
 	)
 	(bus_entry
 		(at 220.98 99.06)
@@ -1066,7 +946,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 53.34) (xy 57.15 53.34)
+			(xy 87.63 86.36) (xy 96.52 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1076,7 +956,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 104.14) (xy 96.52 104.14)
+			(xy 88.9 104.14) (xy 91.44 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1126,6 +1006,16 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 86.36) (xy 87.63 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16ee8dc9-515a-4d31-88cf-3a3b87d1a608")
+	)
+	(wire
+		(pts
 			(xy 168.91 74.93) (xy 168.91 76.2)
 		)
 		(stroke
@@ -1136,7 +1026,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 55.88) (xy 82.55 55.88)
+			(xy 109.22 88.9) (xy 119.38 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1166,16 +1056,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 140.97) (xy 142.24 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23604fdb-9476-45fb-a236-5df458510403")
-	)
-	(wire
-		(pts
 			(xy 125.73 171.45) (xy 130.81 171.45)
 		)
 		(stroke
@@ -1183,16 +1063,6 @@
 			(type default)
 		)
 		(uuid "2498ce5e-38f1-4954-a745-02b91d500bac")
-	)
-	(wire
-		(pts
-			(xy 142.24 143.51) (xy 139.7 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26fab059-b132-40c9-933e-fc6e644c2e5c")
 	)
 	(wire
 		(pts
@@ -1204,15 +1074,15 @@
 		)
 		(uuid "27468467-3085-477f-9c66-251cb2a52830")
 	)
-	(wire
+	(bus
 		(pts
-			(xy 181.61 130.81) (xy 182.88 130.81)
+			(xy 203.2 120.65) (xy 205.74 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2e2437b6-3fce-4b3d-bcf9-6ead5926ab9d")
+		(uuid "2b1b0397-2392-4c4f-8850-233d8d40b402")
 	)
 	(wire
 		(pts
@@ -1233,16 +1103,6 @@
 			(type default)
 		)
 		(uuid "3e3b43e5-1d1f-4810-8123-b45f856189e4")
-	)
-	(wire
-		(pts
-			(xy 81.28 86.36) (xy 81.28 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40fc5584-2347-4eb0-85e5-3b9f468b11c9")
 	)
 	(bus
 		(pts
@@ -1306,7 +1166,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 50.8) (xy 77.47 46.99)
+			(xy 114.3 83.82) (xy 114.3 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1316,13 +1176,13 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 128.27) (xy 182.88 128.27)
+			(xy 139.7 140.97) (xy 142.24 140.97)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5adfbf62-f7ae-478d-ae7c-e1e32d28979f")
+		(uuid "5a80253e-951f-42ad-832d-aa33edcdc751")
 	)
 	(wire
 		(pts
@@ -1353,16 +1213,6 @@
 			(type default)
 		)
 		(uuid "640e5fd4-c7e2-4223-82ad-49c4a5e0f701")
-	)
-	(wire
-		(pts
-			(xy 57.15 53.34) (xy 57.15 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "651f28ae-a250-44df-b40c-30a91094f8b1")
 	)
 	(bus
 		(pts
@@ -1403,26 +1253,6 @@
 			(type default)
 		)
 		(uuid "76d78bb0-6dd1-4e20-95ee-a8f08804aa04")
-	)
-	(wire
-		(pts
-			(xy 205.74 120.65) (xy 203.2 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a49435a-a714-483b-b8f1-16cd1a434f4f")
-	)
-	(wire
-		(pts
-			(xy 57.15 53.34) (xy 59.69 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7bc11d54-9691-4471-9ef8-61bc6f34b613")
 	)
 	(wire
 		(pts
@@ -1486,7 +1316,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 50.8) (xy 77.47 50.8)
+			(xy 109.22 83.82) (xy 114.3 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1516,7 +1346,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 55.88) (xy 82.55 46.99)
+			(xy 119.38 88.9) (xy 119.38 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1596,23 +1426,13 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 104.14) (xy 127 104.14)
+			(xy 104.14 104.14) (xy 127 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "deaef312-7b1a-488d-84bc-404dee34afec")
-	)
-	(wire
-		(pts
-			(xy 76.2 86.36) (xy 81.28 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e00a9f9c-9a8f-4a1d-b365-20f8fc234ade")
 	)
 	(wire
 		(pts
@@ -1643,6 +1463,16 @@
 			(type default)
 		)
 		(uuid "e6209df0-6c9c-4d9a-81f4-48a8db1f789e")
+	)
+	(bus
+		(pts
+			(xy 123.19 101.6) (xy 127 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9e8b092-238f-4fbe-96f3-24cdafd4bb1b")
 	)
 	(wire
 		(pts
@@ -1686,7 +1516,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 49.53) (xy 50.8 53.34)
+			(xy 87.63 82.55) (xy 87.63 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1734,16 +1564,6 @@
 		)
 		(uuid "0dc1fdd9-5f9e-4dfc-9409-fd587f4a7baf")
 	)
-	(label "CLK_efpga_0"
-		(at 181.61 130.81 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0eaab760-74c2-45e5-bf49-39a78704d1a2")
-	)
 	(label "UART{UART}"
 		(at 165.1 100.33 0)
 		(effects
@@ -1783,16 +1603,6 @@
 			(justify right bottom)
 		)
 		(uuid "2635f4d2-f496-4500-9030-bd27deaf0670")
-	)
-	(label "CLK_efpga_1"
-		(at 181.61 128.27 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2db8de7f-7fd0-413d-a50b-8b5a3f3688cb")
 	)
 	(label "~{Flash_WP}"
 		(at 205.74 125.73 0)
@@ -1835,14 +1645,14 @@
 		(uuid "4a9d0743-0bf9-4aa6-948d-bd64bbc28d66")
 	)
 	(label "FC.external_clock"
-		(at 205.74 120.65 0)
+		(at 142.24 140.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "4ec83b8a-92fd-454e-b9eb-2e22295f7c3f")
+		(uuid "586e8b3a-362b-46d9-b924-da42dfe5854a")
 	)
 	(label "Flash_SPI{SPI}"
 		(at 125.73 166.37 180)
@@ -1863,6 +1673,16 @@
 			(justify left bottom)
 		)
 		(uuid "6e718f41-aa5b-4501-8bdc-6ce95fca661d")
+	)
+	(label "Bitbang{Bitbang}"
+		(at 205.74 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7ddb8caf-4cc5-450d-885c-2cafde3552ee")
 	)
 	(label "~{Flash_WP}"
 		(at 125.73 168.91 180)
@@ -1954,16 +1774,6 @@
 		)
 		(uuid "c9fe4f01-51d5-4068-b2e6-65616b1d6789")
 	)
-	(label "CLK_efpga_0"
-		(at 142.24 140.97 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d3b2ee9c-6063-4b13-b845-cc4380ac8ac0")
-	)
 	(label "FTDI_UART_RX"
 		(at 44.45 142.24 180)
 		(effects
@@ -2024,15 +1834,15 @@
 		)
 		(uuid "e521bcf5-0679-4804-ab62-1f02bccdcc4b")
 	)
-	(label "CLK_efpga_1"
-		(at 142.24 143.51 0)
+	(label "Bitbang{Bitbang}"
+		(at 123.19 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "e68668bb-e46a-41eb-b52f-ef9396775220")
+		(uuid "efa025d1-8653-4550-9e2b-8255b3fc7a39")
 	)
 	(label "FTDI_UART_TX"
 		(at 180.34 110.49 180)
@@ -2131,82 +1941,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 57.15 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "04565abc-3722-4db4-a55b-5d680bdf9cb9")
-		(property "Reference" "#PWR01"
-			(at 57.15 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 57.15 42.8569 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 57.15 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 57.15 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 57.15 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "345a10bb-b3ab-4225-ae62-7934f11ebc94")
-		)
-		(instances
-			(project "FABulous_board"
-				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
-		(at 82.55 46.99 0)
+		(at 119.38 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "1a788fdf-79cd-49a3-bfa8-c3d5d2c1b88f")
-		(property "Reference" "#PWR04"
-			(at 82.55 50.8 0)
+		(property "Reference" "#PWR3"
+			(at 119.38 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2215,7 +1959,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 82.804 42.926 0)
+			(at 119.634 75.946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2223,7 +1967,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 46.99 0)
+			(at 119.38 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2232,7 +1976,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 46.99 0)
+			(at 119.38 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2241,7 +1985,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 82.55 46.99 0)
+			(at 119.38 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2255,7 +1999,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR04")
+					(reference "#PWR3")
 					(unit 1)
 				)
 			)
@@ -2263,7 +2007,7 @@
 	)
 	(symbol
 		(lib_id "power:+1V8")
-		(at 77.47 46.99 0)
+		(at 114.3 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2271,8 +2015,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e758e6d-b375-45ad-8c21-ae1319d3d23e")
-		(property "Reference" "#PWR02"
-			(at 77.47 50.8 0)
+		(property "Reference" "#PWR2"
+			(at 114.3 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2281,7 +2025,7 @@
 			)
 		)
 		(property "Value" "+1V8"
-			(at 77.47 42.8569 0)
+			(at 114.3 75.8769 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2289,7 +2033,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 46.99 0)
+			(at 114.3 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2298,7 +2042,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 46.99 0)
+			(at 114.3 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2307,7 +2051,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+1V8\""
-			(at 77.47 46.99 0)
+			(at 114.3 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2321,7 +2065,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR02")
+					(reference "#PWR2")
 					(unit 1)
 				)
 			)
@@ -2398,72 +2142,6 @@
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 81.28 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3998cce4-9d54-447a-9714-73c00e60dd46")
-		(property "Reference" "#PWR03"
-			(at 81.28 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 81.28 74.6069 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 81.28 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "24bfe2a2-8e61-4710-82ca-c518c614bdfc")
-		)
-		(instances
-			(project "FABulous_board"
-				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -2565,7 +2243,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80dc0a36-c3dc-4cc8-836f-29acdf3ef37a")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR7"
 			(at 261.62 63.5 0)
 			(effects
 				(font
@@ -2615,7 +2293,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR09")
+					(reference "#PWR7")
 					(unit 1)
 				)
 			)
@@ -2631,7 +2309,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b21a4f1-218d-4ee6-894f-719ff1dc8acc")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR4"
 			(at 165.1 138.43 0)
 			(effects
 				(font
@@ -2681,7 +2359,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR06")
+					(reference "#PWR4")
 					(unit 1)
 				)
 			)
@@ -2696,7 +2374,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f910a2b-5d9f-4b87-9f90-f32b225c419b")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR5"
 			(at 168.91 68.58 0)
 			(effects
 				(font
@@ -2746,7 +2424,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR07")
+					(reference "#PWR5")
 					(unit 1)
 				)
 			)
@@ -2754,7 +2432,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 50.8 49.53 0)
+		(at 87.63 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2762,8 +2440,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7b874ac-20cd-4b53-8d47-f5b497979cf5")
-		(property "Reference" "#FLG01"
-			(at 50.8 47.625 0)
+		(property "Reference" "#FLG1"
+			(at 87.63 80.645 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2772,7 +2450,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 50.8 45.3969 0)
+			(at 87.63 78.4169 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2780,7 +2458,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 50.8 49.53 0)
+			(at 87.63 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2789,7 +2467,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 49.53 0)
+			(at 87.63 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2798,7 +2476,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 50.8 49.53 0)
+			(at 87.63 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2812,7 +2490,7 @@
 		(instances
 			(project ""
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#FLG01")
+					(reference "#FLG1")
 					(unit 1)
 				)
 			)
@@ -2828,7 +2506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b36952c6-3a51-4c5b-a034-0733f543e391")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR1"
 			(at 88.9 125.73 0)
 			(effects
 				(font
@@ -2878,7 +2556,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR05")
+					(reference "#PWR1")
 					(unit 1)
 				)
 			)
@@ -3040,7 +2718,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e1392ead-974d-4287-8ee3-51d0da30b356")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR6"
 			(at 261.62 34.29 0)
 			(effects
 				(font
@@ -3090,7 +2768,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
-					(reference "#PWR08")
+					(reference "#PWR6")
 					(unit 1)
 				)
 			)
@@ -3231,9 +2909,8 @@
 		)
 	)
 	(sheet
-		(at 59.69 48.26)
+		(at 96.52 81.28)
 		(size 12.7 10.16)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -3242,8 +2919,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "0ec6fa36-eb17-4575-aede-06fec96d10db")
-		(property "Sheetname" "Voltage Conversion"
-			(at 59.69 47.5484 0)
+		(property "Sheetname" "Power Management"
+			(at 93.726 80.772 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3252,7 +2929,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 59.69 59.0046 0)
+			(at 96.52 92.0246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3262,7 +2939,7 @@
 			)
 		)
 		(pin "1V8" output
-			(at 72.39 50.8 0)
+			(at 109.22 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3271,18 +2948,8 @@
 			)
 			(uuid "1b4c3de9-bc13-40b4-9138-d603b735f5b1")
 		)
-		(pin "5V" input
-			(at 59.69 53.34 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "fe809e7b-50ae-40cd-83e9-356b9653ca4e")
-		)
 		(pin "3V3" output
-			(at 72.39 55.88 0)
+			(at 109.22 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3290,6 +2957,16 @@
 				(justify right)
 			)
 			(uuid "5f01f7ac-6f0c-4d70-b5fc-8b93cb389f66")
+		)
+		(pin "VBUS" input
+			(at 96.52 86.36 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "23db9a26-e2f9-4451-b111-749a02291140")
 		)
 		(instances
 			(project "FABulous_board"
@@ -3498,7 +3175,7 @@
 	)
 	(sheet
 		(at 182.88 89.535)
-		(size 20.32 43.815)
+		(size 20.32 37.465)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3518,7 +3195,7 @@
 			)
 		)
 		(property "Sheetfile" "pins.kicad_sch"
-			(at 182.88 133.9346 0)
+			(at 182.88 127.5846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3617,36 +3294,6 @@
 			)
 			(uuid "95d523ba-584d-43da-8488-008c5e99e204")
 		)
-		(pin "CLK_efpga" output
-			(at 203.2 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "2fa17f48-8bc7-42c2-b8d9-edc445201b99")
-		)
-		(pin "CLK_efpga_0" input
-			(at 182.88 130.81 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "afb077be-0ebf-4ae6-b9ff-1e91cec39378")
-		)
-		(pin "CLK_efpga_1" input
-			(at 182.88 128.27 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "6747f604-e879-429c-bea1-5f5fd7b36552")
-		)
 		(pin "SPI{SPI}" bidirectional
 			(at 203.2 115.57 0)
 			(effects
@@ -3687,6 +3334,16 @@
 			)
 			(uuid "4167e006-3f7b-4887-999d-27546856ab96")
 		)
+		(pin "Bitbang{Bitbang}" output
+			(at 203.2 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "cb49f37f-5781-498b-af08-f5af6ba31bd1")
+		)
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
@@ -3696,9 +3353,8 @@
 		)
 	)
 	(sheet
-		(at 96.52 100.33)
+		(at 91.44 100.33)
 		(size 12.7 6.35)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -3708,7 +3364,7 @@
 		)
 		(uuid "61abf8ce-9ba2-4995-9a57-37e178bb3e97")
 		(property "Sheetname" "Voltage Supervisor"
-			(at 96.52 99.6184 0)
+			(at 89.662 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3717,7 +3373,7 @@
 			)
 		)
 		(property "Sheetfile" "voltage_supervisor.kicad_sch"
-			(at 96.52 107.2646 0)
+			(at 91.44 107.2646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3727,7 +3383,7 @@
 			)
 		)
 		(pin "~{MR}" input
-			(at 96.52 104.14 180)
+			(at 91.44 104.14 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3737,7 +3393,7 @@
 			(uuid "491ef3fe-8874-4f4e-abf6-b68b228e4679")
 		)
 		(pin "~{RST}" output
-			(at 109.22 104.14 0)
+			(at 104.14 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3924,6 +3580,16 @@
 			)
 			(uuid "3cb5a024-a0d6-48d9-9ebf-486e42387877")
 		)
+		(pin "Bitbang{Bitbang}" input
+			(at 127 101.6 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f1364ed3-ed7d-4111-8eac-d774932f0393")
+		)
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71"
@@ -3973,16 +3639,6 @@
 			)
 			(uuid "575bc158-191c-4e0c-ab7c-2e9838e7a845")
 		)
-		(pin "5V" output
-			(at 76.2 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "f06f2cd0-2922-4505-8451-a86a1ffc60e9")
-		)
 		(pin "~{UART_EN}" output
 			(at 76.2 92.71 0)
 			(effects
@@ -4002,6 +3658,16 @@
 				(justify right)
 			)
 			(uuid "e24a5965-808d-45bb-9adc-2ab61c90dbf9")
+		)
+		(pin "VBUS" output
+			(at 76.2 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9a30547d-d397-41b3-bb18-141fb7b5eaa6")
 		)
 		(instances
 			(project "FABulous_board"
@@ -4062,7 +3728,7 @@
 			)
 			(uuid "c9514c45-fc04-402a-9e30-25abee17de7b")
 		)
-		(pin "CLK_efpga_0" output
+		(pin "CLK_efpga" output
 			(at 139.7 140.97 0)
 			(effects
 				(font
@@ -4070,17 +3736,7 @@
 				)
 				(justify right)
 			)
-			(uuid "2f5ab4e5-4177-49d0-9ede-91726691b48a")
-		)
-		(pin "CLK_efpga_1" output
-			(at 139.7 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "bcd37f13-b21c-4153-ba23-bc375909298c")
+			(uuid "47edf83b-0800-4a65-a47e-eb64979736c6")
 		)
 		(instances
 			(project "FABulous_board"

@@ -7,7 +7,7 @@
 	(title_block
 		(title "Voltage Supervisor")
 		(date "2024-05-30")
-		(rev "0.1.1")
+		(rev "0.2.0")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -638,7 +638,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ffd162a-2b8b-4249-840b-857fffccf1e6")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR73"
 			(at 127 91.44 0)
 			(effects
 				(font
@@ -688,7 +688,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/61abf8ce-9ba2-4995-9a57-37e178bb3e97"
-					(reference "#PWR066")
+					(reference "#PWR73")
 					(unit 1)
 				)
 			)
@@ -703,7 +703,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "90cf00f2-576a-41d0-bf48-549fbacbe6a2")
-		(property "Reference" "C23"
+		(property "Reference" "C24"
 			(at 106.68 104.14 90)
 			(effects
 				(font
@@ -755,7 +755,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/61abf8ce-9ba2-4995-9a57-37e178bb3e97"
-					(reference "C23")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -771,7 +771,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b8fd3c1-4c07-4600-ac10-464eb9a5fba0")
-		(property "Reference" "U8"
+		(property "Reference" "U9"
 			(at 129.1941 91.2325 0)
 			(effects
 				(font
@@ -834,7 +834,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/61abf8ce-9ba2-4995-9a57-37e178bb3e97"
-					(reference "U8")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -850,7 +850,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aec7f299-936a-4ab6-b4bc-e7461ce8388d")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR74"
 			(at 127 116.84 0)
 			(effects
 				(font
@@ -900,7 +900,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/61abf8ce-9ba2-4995-9a57-37e178bb3e97"
-					(reference "#PWR067")
+					(reference "#PWR74")
 					(unit 1)
 				)
 			)
@@ -916,7 +916,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb979c5a-0121-43f1-9d68-b0b60e12f580")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR72"
 			(at 111.76 116.84 0)
 			(effects
 				(font
@@ -966,7 +966,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/61abf8ce-9ba2-4995-9a57-37e178bb3e97"
-					(reference "#PWR065")
+					(reference "#PWR72")
 					(unit 1)
 				)
 			)

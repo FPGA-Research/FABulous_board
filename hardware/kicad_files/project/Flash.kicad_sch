@@ -7,7 +7,7 @@
 	(title_block
 		(title "Flash Memory")
 		(date "2024-05-30")
-		(rev "0.1.1")
+		(rev "0.2.0")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -1221,7 +1221,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a8d5ae0-7b43-4fe1-9b04-c73e1852c72a")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR12"
 			(at 127 58.42 0)
 			(effects
 				(font
@@ -1271,7 +1271,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/3740c85a-bf01-4ef6-a446-765972762ca5"
-					(reference "#PWR014")
+					(reference "#PWR12")
 					(unit 1)
 				)
 			)
@@ -1354,7 +1354,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26d45870-bef6-432b-91c8-56f46fcaf35e")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR11"
 			(at 118.11 58.42 0)
 			(effects
 				(font
@@ -1404,7 +1404,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/3740c85a-bf01-4ef6-a446-765972762ca5"
-					(reference "#PWR013")
+					(reference "#PWR11")
 					(unit 1)
 				)
 			)
@@ -1505,7 +1505,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a2bcfba-7627-4979-b151-d71a1888be77")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR14"
 			(at 152.4 60.96 0)
 			(effects
 				(font
@@ -1555,7 +1555,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/3740c85a-bf01-4ef6-a446-765972762ca5"
-					(reference "#PWR016")
+					(reference "#PWR14")
 					(unit 1)
 				)
 			)
@@ -1638,7 +1638,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49ff53cc-cff6-4754-8329-a9484f8d8820")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR16"
 			(at 170.18 101.6 0)
 			(effects
 				(font
@@ -1688,7 +1688,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/3740c85a-bf01-4ef6-a446-765972762ca5"
-					(reference "#PWR018")
+					(reference "#PWR16")
 					(unit 1)
 				)
 			)
@@ -1704,7 +1704,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f7a99cd-da39-4564-ad5e-afd39b558c7c")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR10"
 			(at 110.49 58.42 0)
 			(effects
 				(font
@@ -1754,7 +1754,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/3740c85a-bf01-4ef6-a446-765972762ca5"
-					(reference "#PWR012")
+					(reference "#PWR10")
 					(unit 1)
 				)
 			)
@@ -1770,7 +1770,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76cd76d3-011d-411c-9cb3-aaeb51c64888")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR9"
 			(at 102.87 58.42 0)
 			(effects
 				(font
@@ -1820,7 +1820,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/3740c85a-bf01-4ef6-a446-765972762ca5"
-					(reference "#PWR011")
+					(reference "#PWR9")
 					(unit 1)
 				)
 			)
@@ -1836,7 +1836,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "794183e2-f4ae-451a-bb07-177841a4490b")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR13"
 			(at 135.89 58.42 0)
 			(effects
 				(font
@@ -1886,7 +1886,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/3740c85a-bf01-4ef6-a446-765972762ca5"
-					(reference "#PWR015")
+					(reference "#PWR13")
 					(unit 1)
 				)
 			)
@@ -1902,7 +1902,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ea86d8d-daa4-4e4c-b6f2-5348ba501e90")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR8"
 			(at 93.98 58.42 0)
 			(effects
 				(font
@@ -1952,7 +1952,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/3740c85a-bf01-4ef6-a446-765972762ca5"
-					(reference "#PWR010")
+					(reference "#PWR8")
 					(unit 1)
 				)
 			)
@@ -1968,7 +1968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b721230e-289c-448a-a595-658bd5183957")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR15"
 			(at 152.4 101.6 0)
 			(effects
 				(font
@@ -2018,7 +2018,7 @@
 		(instances
 			(project "FABulous_board"
 				(path "/5664f05e-a3ef-4177-8026-c4580fa32c71/3740c85a-bf01-4ef6-a446-765972762ca5"
-					(reference "#PWR017")
+					(reference "#PWR15")
 					(unit 1)
 				)
 			)
